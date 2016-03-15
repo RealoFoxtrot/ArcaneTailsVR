@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Turning : MonoBehaviour {
 
-    private bool beenhit;
+
     private Rigidbody rb;
     private Vector3 cameraLocation;
     private Vector3 crossHair;
@@ -21,10 +21,8 @@ public class Turning : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        beenhit = GameObject.FindGameObjectWithTag("Player").GetComponent<PinballMovement>().beenhit;
 
-
-        if (beenhit == true)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PinballMovement>().beenhit == true)
         {
 
         }
@@ -39,7 +37,7 @@ public class Turning : MonoBehaviour {
 
             Quaternion turnPlayer = Quaternion.LookRotation(pointAtCrossHair);
 
-           // rb.MoveRotation(turnPlayer);
+            rb.MoveRotation(turnPlayer);
         }
 
 	}

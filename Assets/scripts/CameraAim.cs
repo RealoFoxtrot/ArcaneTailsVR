@@ -11,7 +11,7 @@ public class CameraAim : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+         
         playerCamera = GetComponent<Camera>();
         hitTransform = new Vector3();
         floorMask = LayerMask.GetMask("Floor");
