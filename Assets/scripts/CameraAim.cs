@@ -46,6 +46,8 @@ public class CameraAim : MonoBehaviour {
         // make the object appear at the hit point.
         //transform.rotation = Quaternion.Euler(y, x, 0);
         hitCube.transform.position = hitTransform;
+
+        print(hitTransform);
       
 
     }

@@ -9,8 +9,9 @@ public class Turning : MonoBehaviour {
     private Vector3 crossHair;
     private Vector3 pointAtCrossHair;
 
-    public GameObject Camera;
 
+    public GameObject Camera;
+    public GameObject Player;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -22,7 +23,7 @@ public class Turning : MonoBehaviour {
 	void FixedUpdate () {
 
 
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PinballMovement>().beenhit == true)
+        if (Player.GetComponent<PinballMovement>().beenhit == true)
         {
 
         }

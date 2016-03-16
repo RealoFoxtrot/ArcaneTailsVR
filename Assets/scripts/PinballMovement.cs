@@ -48,7 +48,7 @@ public class PinballMovement : MonoBehaviour
 
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
-        Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
+        //Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
 
@@ -114,7 +114,7 @@ public class PinballMovement : MonoBehaviour
     void parentturning()
     {
         //get the location of the camera
-        cameraLocation = GameObject.Find("Camera").transform.position;
+        cameraLocation = Camera.GetComponent<CameraAim>().hitTransform;
         cameraLocation.y = transform.position.y;
 
         //create a vector between the crosshair and the player
@@ -138,7 +138,7 @@ public class PinballMovement : MonoBehaviour
         if (horizontal < 0)
         {
 
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
         }
 
         if (vertical != 0)
