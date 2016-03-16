@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyArrayTracker : MonoBehaviour {
 
-    private Vector3 CurrentEnemy;
+    public static Vector3 CurrentEnemy;
     
 
     // usually static isn't used but just for testing
@@ -30,21 +30,24 @@ public class EnemyArrayTracker : MonoBehaviour {
             // check if set
             float Dis = 0;
 
-            if (CurrentEnemy != Vector3.zero)
-            {
+            
                  Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
-            }
+           
+
 
 
 
             // if it isn't checking against iself and is less than the last distance
-            if (Dis != 0 && Dis < CurrentShortestDis)
+            if (Dis != 0 )
             {
                 CurrentShortestDis = Dis;
                 ClosestEnemy = enemy.transform.position;
+               // print(ClosestEnemy);
             }
-
+            
         }
+
+     
 
 
 

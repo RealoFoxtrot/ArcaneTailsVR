@@ -35,14 +35,18 @@ public class SimpleAgent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       
         DistanceToEnemy = Vector3.Distance(transform.position, Target);
+        
 
-
-        if (Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) < DistanceToEnemy)
+        if (Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) < DistanceToEnemy
+            && Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) != 0)
         {
             DistanceToEnemy = Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy);
+            EnemyArrayTracker.CurrentEnemy = gameObject.transform.position;
             Target = EnemyArrayTracker.ClosestEnemy;
         }
+        print(DistanceToEnemy);
         // Timer countdown to the AI hitting the player.
         hitTimer += 1 * Time.deltaTime;
         if (hitTimer > 5) // every 5 seconds

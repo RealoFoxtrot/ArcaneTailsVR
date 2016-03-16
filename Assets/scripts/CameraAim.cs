@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class CameraAim : MonoBehaviour {
@@ -7,6 +8,7 @@ public class CameraAim : MonoBehaviour {
     public Vector3 hitTransform;
     public GameObject hitCube;
     public GameObject Player;
+    public GameObject CurrentHit;
     int floorMask;
 
 	// Use this for initialization
@@ -15,6 +17,7 @@ public class CameraAim : MonoBehaviour {
         playerCamera = GetComponent<Camera>();
         hitTransform = new Vector3();
         floorMask = LayerMask.GetMask("Floor");
+
     }
 	
 	// Update is called once per frame
@@ -26,28 +29,46 @@ public class CameraAim : MonoBehaviour {
 
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
 
-        if (Physics.Raycast(ray, out hit, 100, floorMask))
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            if (CurrentHit)
+            {
+                if (CurrentHit.name == "StartBox" && Input.GetButton("Jump"))
+                {
+
+                    SceneManager.LoadScene("Level Layout Test");
+
+                }
+            }
+            
+        }
+        //print(CurrentHit);
+        if (Physics.Raycast(ray, out hit, 1000, floorMask))
         {
 
-
+               
                 hitTransform = new Vector3(hit.point.x, hit.point.y, hit.point.z);
 
 
 
         }
-        float x = Input.mousePosition.x / 2;
-        float y = Input.mousePosition.y / 2;
-       
 
-        //make camera move with mouse for a bit.
+        if (Physics.Raycast(ray, out hit, 1000))
+        {
+            CurrentHit = hit.collider.gameObject;
+           
+            print(hit.collider.gameObject);
+        }
 
 
 
-        // make the object appear at the hit point.
-        //transform.rotation = Quaternion.Euler(y, x, 0);
-        hitCube.transform.position = hitTransform;
 
-        print(hitTransform);
+
+            // make the object appear at the hit point.
+
+            hitCube.transform.position = hitTransform;
+
+        
       
 
     }
