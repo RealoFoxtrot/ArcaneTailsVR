@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SimpleAgent : MonoBehaviour {
 
-    public Transform Target;
+    public Vector3 Target;
     NavMeshAgent agent;
     Rigidbody rb;
     Collider col;
@@ -13,6 +13,9 @@ public class SimpleAgent : MonoBehaviour {
 
     
     private float boomForce = 1000;
+    private float DistanceToEnemy;
+
+
     public float boomRadius = 2f;
     public GameObject BoomPos;
     float timer = 0;
@@ -32,7 +35,14 @@ public class SimpleAgent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        DistanceToEnemy = Vector3.Distance(transform.position, Target);
 
+
+        if (Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) < DistanceToEnemy)
+        {
+            DistanceToEnemy = Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy);
+            Target = EnemyArrayTracker.ClosestEnemy;
+        }
         // Timer countdown to the AI hitting the player.
         hitTimer += 1 * Time.deltaTime;
         if (hitTimer > 5) // every 5 seconds
@@ -59,7 +69,7 @@ public class SimpleAgent : MonoBehaviour {
                 rb.isKinematic = true;
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 agent.updatePosition = true;
-                agent.SetDestination(Target.transform.position);
+                agent.SetDestination(Target);
                 timer = 0;
             }
 
@@ -78,13 +88,13 @@ public class SimpleAgent : MonoBehaviour {
         if (agent.enabled)
         {
 
-            Vector3 targetLookAt = Target.transform.position - transform.position;
+            Vector3 targetLookAt = Target - transform.position;
 
             Quaternion AILook = Quaternion.LookRotation(targetLookAt);
 
 
             rb.MoveRotation(AILook);
-            agent.SetDestination(Target.transform.position);
+            agent.SetDestination(Target);
         }
 
         
@@ -127,6 +137,17 @@ public class SimpleAgent : MonoBehaviour {
                 hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
 
             }
+            else
+            {
+                //for Enemies
+                HitObject = hit.gameObject;
+
+                if (hit.gameObject.tag != "Untagged" && hit.attachedRigidbody != null)
+                {
+                    hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
+                    hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
+                }
+           }
 
           
         }
