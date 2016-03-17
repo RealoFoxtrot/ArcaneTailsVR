@@ -3,32 +3,38 @@ using System.Collections;
 
 public class PinballMovement : MonoBehaviour
 {
-
+    //Public Adjustables
     public float speed = 2f;
     public float jumpHeight = 2f;
     public bool beenhit = false;
     public float boomForce = 10f;
     public float boomRadius = 1f;
     public Transform Floor;
+    public GameObject Camera;
 
+    //Private Information
     private Rigidbody rb;
     private float horizontal;
     private float vertical;
     private Vector3 movement;
     private Vector3 cameraLocation;
     private Vector3 LookLocation;
-
     private Vector3 pointAtCamera;
     private Vector3 boomPosition;
     private float boomMultiplier;
+
+    //Jump Control
     private bool jump;
-
     public bool CanJump;
-    public GameObject Camera;
 
+    //Spawners
+    private GameObject spawn1;
+    private GameObject spawn2;
+    private GameObject spawn3;
+    private GameObject spawn4;
+    private int randoSpawn;
 
-
-
+    //Message To Tony: Are any of these used?
     Vector3 explosionPos;
     Collider[] colliders;
     GameObject[] Enemies;
@@ -41,18 +47,20 @@ public class PinballMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-
         explosionPos = transform.position;
 
+        //Location of the SpawnPossitions Set
+        spawn1 = GameObject.Find("Spawn1");
+        spawn2 = GameObject.Find("Spawn2");
+        spawn3 = GameObject.Find("Spawn3");
+        spawn4 = GameObject.Find("Spawn4");
 
 
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
-        //Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
+        Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
-
-
        // Physics.IgnoreLayerCollision(0, 9);
     }
 
@@ -95,10 +103,25 @@ public class PinballMovement : MonoBehaviour
 
         }
 
+        // stuntime
         if (timer >= 2)
         {
 
             beenhit = false;
+        }
+
+        if (transform.position.y < -10)
+        {
+            randoSpawn = Random.Range(1, 4);
+            if (randoSpawn == 1)
+            { transform.position = spawn1.transform.position; }
+            else if (randoSpawn == 2)
+            { transform.position = spawn2.transform.position; }
+            else if (randoSpawn == 3)
+            { transform.position = spawn3.transform.position; }
+            else if (randoSpawn == 4)
+            { transform.position = spawn4.transform.position; }
+
         }
 
     }
@@ -113,11 +136,12 @@ public class PinballMovement : MonoBehaviour
 
     void parentturning()
     {
-        //get the location of the camera
-        cameraLocation = Camera.GetComponent<CameraAim>().hitTransform;
+
+        //Stop Changing this! The Player Rotates around The Camera, NOT The Crosshair
+        cameraLocation = Camera.transform.position;
         cameraLocation.y = transform.position.y;
 
-        //create a vector between the crosshair and the player
+        //create a vector between the Camera and the player
         pointAtCamera = cameraLocation - transform.position;
 
 
