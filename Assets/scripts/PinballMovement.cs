@@ -35,10 +35,11 @@ public class PinballMovement : MonoBehaviour
     private int randoSpawn;
 
     //Message To Tony: Are any of these used?
+    //Yes colliders is used and the explosionPos
     Vector3 explosionPos;
     Collider[] colliders;
-    GameObject[] Enemies;
-   public Collider[] IgnoreColliders;
+    
+  
 
 
     private float timer = 0;
@@ -55,7 +56,7 @@ public class PinballMovement : MonoBehaviour
         spawn3 = GameObject.Find("Spawn3");
         spawn4 = GameObject.Find("Spawn4");
 
-
+        // TODO: add diffrent types of player movement to test out.
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
         Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
@@ -66,7 +67,7 @@ public class PinballMovement : MonoBehaviour
 
     void Update()
     {
-
+        // test code for quitting application
         if (Input.GetKey(KeyCode.Escape))
         {
 
@@ -153,6 +154,7 @@ public class PinballMovement : MonoBehaviour
     void physicsPinballControl()
     {
         parentturning();
+        
         if (horizontal > 0)
         {
 
@@ -171,7 +173,7 @@ public class PinballMovement : MonoBehaviour
             rb.AddRelativeForce(0, 0, vertical * speed * rb.mass * 500 * Time.deltaTime);
         }
 
-        if (jump == true && CanJump)
+        if (CanJump)
         {
             rb.AddForce(0, jumpHeight * 10000, 0);
         }

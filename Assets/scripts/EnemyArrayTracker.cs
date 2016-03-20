@@ -11,14 +11,21 @@ public class EnemyArrayTracker : MonoBehaviour {
     public static Vector3 ClosestEnemy;
 
     // list of all the enemies in the secene
-    public GameObject[] EnemyArray;
-    
+    public static GameObject[] EnemyArray = new GameObject[4];
+
+
+    void Awake()
+    {
+        EnemyArray = GameObject.FindGameObjectsWithTag("Attacker");
+        
+
+    }
 
 	// Use this for initialization
 	void Start () {
 
         // find all enemys tagged attacker, will need changing in the future.
-        EnemyArray = GameObject.FindGameObjectsWithTag("Attacker");
+        print(EnemyArray.Length);
 	
 	}
 	
@@ -42,7 +49,7 @@ public class EnemyArrayTracker : MonoBehaviour {
             {
                 CurrentShortestDis = Dis;
                 ClosestEnemy = enemy.transform.position;
-               // print(ClosestEnemy);
+                
             }
             
         }

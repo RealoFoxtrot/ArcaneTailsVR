@@ -36,7 +36,7 @@ public class CameraAim : MonoBehaviour {
                 if (CurrentHit.name == "StartBox" && Input.GetButton("Jump"))
                 {
 
-                    SceneManager.LoadScene("Level Layout Test");
+                    SceneManager.LoadScene("Kitten-Test");
 
                 }
             }
@@ -57,7 +57,7 @@ public class CameraAim : MonoBehaviour {
         {
             CurrentHit = hit.collider.gameObject;
            
-            print(hit.collider.gameObject);
+           // print(hit.collider.gameObject);
         }
 
 

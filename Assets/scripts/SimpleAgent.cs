@@ -20,6 +20,10 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject BoomPos;
     float timer = 0;
     float hitTimer = 0;
+    public float DisToEn;
+    public GameObject enemy;
+    public bool BeenHit = false;
+    public GameObject[] spawns;
 
 	// Use this for initialization
 	void Start () {
@@ -31,22 +35,42 @@ public class SimpleAgent : MonoBehaviour {
         {
             Physics.IgnoreCollision(Floor.GetComponent<Collider>(), GetComponent<Collider>());
         }
+
+
+        enemy = EnemyArrayTracker.EnemyArray[Random.Range(0,2)];
+        while(enemy.name == name || enemy == null)
+        {
+            enemy = EnemyArrayTracker.EnemyArray[Random.Range(0, 2)];
+        }
+
+        spawns = GameObject.FindGameObjectsWithTag("Spawn");
+
      }
 	
 	// Update is called once per frame
 	void Update () {
-       
+        Target = enemy.transform.position;
         DistanceToEnemy = Vector3.Distance(transform.position, Target);
-        
 
-        if (Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) < DistanceToEnemy
-            && Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy) != 0)
+
+
+
+        if (BeenHit)
         {
-            DistanceToEnemy = Vector3.Distance(transform.position, EnemyArrayTracker.ClosestEnemy);
-            EnemyArrayTracker.CurrentEnemy = gameObject.transform.position;
-            Target = EnemyArrayTracker.ClosestEnemy;
+            agent.enabled = false;
+            rb.isKinematic = false;
+            rb.constraints = RigidbodyConstraints.None;
+            agent.updatePosition = false;
+            agent.updateRotation = false;
+
         }
-        print(DistanceToEnemy);
+
+        
+           
+
+
+
+        //print(DistanceToEnemy);
         // Timer countdown to the AI hitting the player.
         hitTimer += 1 * Time.deltaTime;
         if (hitTimer > 5) // every 5 seconds
@@ -54,9 +78,14 @@ public class SimpleAgent : MonoBehaviour {
             HitPlayer();
             hitTimer = 0;
         }
-        
-            
-        
+
+
+        if (transform.position.y < 0 || rb.velocity.y > 0.5f)
+        {
+            agent.enabled = false;
+
+
+        }
         
 
 
@@ -67,7 +96,7 @@ public class SimpleAgent : MonoBehaviour {
             
            
 
-            if (timer > 4 && agent.transform.position.y < 1.5f)
+            if (timer > 4 && agent.transform.position.y > 0)
             {
                 agent.enabled = true;
                 rb.isKinematic = true;
