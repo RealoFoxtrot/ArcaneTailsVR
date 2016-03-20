@@ -27,15 +27,15 @@ public class PinballMovement : MonoBehaviour
     private bool jump;
     public bool CanJump;
 
-    //Spawners
+    //Respawn System
+    public int lives = 3;
     private GameObject spawn1;
     private GameObject spawn2;
     private GameObject spawn3;
     private GameObject spawn4;
     private int randoSpawn;
 
-    //Message To Tony: Are any of these used?
-    //Yes colliders is used and the explosionPos
+    //Colliders and explosion
     Vector3 explosionPos;
     Collider[] colliders;
     
@@ -90,7 +90,7 @@ public class PinballMovement : MonoBehaviour
 
 
 
-        // swap between world control and physics pinball
+        // swap between stunned and physics pinball
         if (beenhit == true)
         {
             timer += 1.0f * Time.deltaTime;
@@ -113,15 +113,19 @@ public class PinballMovement : MonoBehaviour
 
         if (transform.position.y < -10)
         {
-            randoSpawn = Random.Range(1, 4);
-            if (randoSpawn == 1)
-            { transform.position = spawn1.transform.position; }
-            else if (randoSpawn == 2)
-            { transform.position = spawn2.transform.position; }
-            else if (randoSpawn == 3)
-            { transform.position = spawn3.transform.position; }
-            else if (randoSpawn == 4)
-            { transform.position = spawn4.transform.position; }
+            if (lives > 0)
+            {
+                lives -= 1;
+                randoSpawn = Random.Range(1, 4);
+                if (randoSpawn == 1)
+                { transform.position = spawn1.transform.position; }
+                else if (randoSpawn == 2)
+                { transform.position = spawn2.transform.position; }
+                else if (randoSpawn == 3)
+                { transform.position = spawn3.transform.position; }
+                else if (randoSpawn == 4)
+                { transform.position = spawn4.transform.position; }
+            }
 
         }
 

@@ -25,6 +25,14 @@ public class SimpleAgent : MonoBehaviour {
     public bool BeenHit = false;
     public GameObject[] spawns;
 
+    //Respawn System
+    public int lives;
+    private GameObject spawn1;
+    private GameObject spawn2;
+    private GameObject spawn3;
+    private GameObject spawn4;
+    private int randoSpawn;
+
 	// Use this for initialization
 	void Start () {
 
@@ -43,7 +51,11 @@ public class SimpleAgent : MonoBehaviour {
             enemy = EnemyArrayTracker.EnemyArray[Random.Range(0, 2)];
         }
 
-        spawns = GameObject.FindGameObjectsWithTag("Spawn");
+        //Location of the SpawnPossitions Set
+        spawn1 = GameObject.Find("Spawn1");
+        spawn2 = GameObject.Find("Spawn2");
+        spawn3 = GameObject.Find("Spawn3");
+        spawn4 = GameObject.Find("Spawn4");
 
      }
 	
@@ -130,7 +142,23 @@ public class SimpleAgent : MonoBehaviour {
             agent.SetDestination(Target);
         }
 
-        
+        if (transform.position.y < -10)
+        {
+            if (lives > 1)
+            {
+                lives = lives - 1;
+                randoSpawn = Random.Range(1, 4);
+                if (randoSpawn == 1)
+                { transform.position = spawn1.transform.position; }
+                else if (randoSpawn == 2)
+                { transform.position = spawn2.transform.position; }
+                else if (randoSpawn == 3)
+                { transform.position = spawn3.transform.position; }
+                else if (randoSpawn == 4)
+                { transform.position = spawn4.transform.position; }
+            }
+
+        }
 
 
     }
