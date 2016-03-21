@@ -50,12 +50,15 @@ public class SimpleAgent : MonoBehaviour {
         {
             enemy = EnemyArrayTracker.EnemyArray[Random.Range(0, 2)];
         }
+        //Location of the SpawnPossitions Set in an array
+        spawns = GameObject.FindGameObjectsWithTag("Spwan");
 
         //Location of the SpawnPossitions Set
-        spawn1 = GameObject.Find("Spawn1");
+        /*spawn1 = GameObject.Find("Spawn1");
         spawn2 = GameObject.Find("Spawn2");
         spawn3 = GameObject.Find("Spawn3");
         spawn4 = GameObject.Find("Spawn4");
+        */
 
      }
 	
@@ -147,15 +150,11 @@ public class SimpleAgent : MonoBehaviour {
             if (lives > 1)
             {
                 lives = lives - 1;
-                randoSpawn = Random.Range(1, 4);
-                if (randoSpawn == 1)
-                { transform.position = spawn1.transform.position; }
-                else if (randoSpawn == 2)
-                { transform.position = spawn2.transform.position; }
-                else if (randoSpawn == 3)
-                { transform.position = spawn3.transform.position; }
-                else if (randoSpawn == 4)
-                { transform.position = spawn4.transform.position; }
+               // randoSpawn = Random.Range(1, 4);
+
+                // grab random spwan point in array.
+                transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
+
             }
 
         }

@@ -4076,6 +4076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5212e409ee385d1419329e4fbf7da3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameEndTime: 5
 --- !u!4 &277432687
 Transform:
   m_ObjectHideFlags: 0
@@ -4182,6 +4183,10 @@ Prefab:
     - target: {fileID: 2372234, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424238, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: lives
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
@@ -11263,6 +11268,10 @@ Prefab:
     - target: {fileID: 186806, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
       propertyPath: m_Name
       value: Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424238, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: lives
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
@@ -26541,6 +26550,10 @@ Prefab:
     - target: {fileID: 2372234, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424238, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: lives
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
