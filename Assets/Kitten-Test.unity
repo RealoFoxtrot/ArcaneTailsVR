@@ -27579,7 +27579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438908, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: speed
-      value: 0.9
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 11438908, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: boomRadius
