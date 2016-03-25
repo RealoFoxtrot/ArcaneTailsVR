@@ -75,6 +75,13 @@ public class PinballMovement : MonoBehaviour
 
         }
 
+        if (Input.GetButton("Reset"))
+        {
+             transform.position = spawn1.transform.position; 
+         
+
+        }
+
 
     }
 
@@ -111,6 +118,8 @@ public class PinballMovement : MonoBehaviour
             beenhit = false;
         }
 
+        
+
         if (transform.position.y < -10)
         {
             if (lives > 0)
@@ -126,6 +135,11 @@ public class PinballMovement : MonoBehaviour
                 else if (randoSpawn == 4)
                 { transform.position = spawn4.transform.position; }
             }
+
+
+
+
+           
 
         }
 

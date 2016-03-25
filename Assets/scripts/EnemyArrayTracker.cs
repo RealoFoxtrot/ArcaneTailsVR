@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class EnemyArrayTracker : MonoBehaviour {
 
@@ -12,12 +13,16 @@ public class EnemyArrayTracker : MonoBehaviour {
 
     // list of all the enemies in the secene
     public static GameObject[] EnemyArray = new GameObject[4];
+    public static List<GameObject> EnemyList = new List<GameObject>();
 
 
     void Awake()
     {
         EnemyArray = GameObject.FindGameObjectsWithTag("Attacker");
-        
+
+        //add enemies and player to the list
+        EnemyList.AddRange(GameObject.FindGameObjectsWithTag("Attacker"));
+        EnemyList.Add(GameObject.FindGameObjectWithTag("Player"));
 
     }
 
@@ -39,8 +44,9 @@ public class EnemyArrayTracker : MonoBehaviour {
 
             
                  Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
-           
 
+            //check to see if all the players have been eliminated
+            
 
 
 

@@ -9,6 +9,7 @@ public class SimpleAgent : MonoBehaviour {
     Collider col;
     public Transform Floor;
     GameObject HitObject;
+    public GameObject EnemyDebug;
 
 
     
@@ -24,13 +25,10 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject enemy;
     public bool BeenHit = false;
     public GameObject[] spawns;
+    public GameObject LivesText;
 
     //Respawn System
     public int lives;
-    private GameObject spawn1;
-    private GameObject spawn2;
-    private GameObject spawn3;
-    private GameObject spawn4;
     private int randoSpawn;
 
 	// Use this for initialization
@@ -45,29 +43,60 @@ public class SimpleAgent : MonoBehaviour {
         }
 
 
-        enemy = EnemyArrayTracker.EnemyArray[Random.Range(0,2)];
-        while(enemy.name == name || enemy == null)
+       
+        if(!enemy)
         {
-            enemy = EnemyArrayTracker.EnemyArray[Random.Range(0, 2)];
+            enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
         }
         //Location of the SpawnPossitions Set in an array
-        spawns = GameObject.FindGameObjectsWithTag("Spwan");
+        spawns = GameObject.FindGameObjectsWithTag("Spawn");
 
-        //Location of the SpawnPossitions Set
-        /*spawn1 = GameObject.Find("Spawn1");
-        spawn2 = GameObject.Find("Spawn2");
-        spawn3 = GameObject.Find("Spawn3");
-        spawn4 = GameObject.Find("Spawn4");
-        */
-
+      
      }
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (LivesText)
+        {
+            
+            LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
+            LivesText.transform.LookAt(-Camera.main.transform.position);
+          
+        }
+
+        if (enemy.tag == "Player")
+        {
+            if (enemy.GetComponent<PinballMovement>().lives == 0 || enemy.name == name)
+            {
+                enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
+                EnemyDebug = enemy;
+
+            }
+
+        }
+
+        // if enemy
+        if (enemy.tag == "Attacker")
+        {
+            if (enemy.name == name || enemy.GetComponent<SimpleAgent>().lives == 0)
+            {
+                //testing
+                // cast to a gameobject for the arraylist
+                enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
+                EnemyDebug = enemy;
+            }
+        }
+
+        //set target
         Target = enemy.transform.position;
         DistanceToEnemy = Vector3.Distance(transform.position, Target);
 
-
+        if (Input.GetButton("Reset"))
+        {
+            //reset enemies
+            transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
+        }
 
 
         if (BeenHit)
@@ -79,7 +108,7 @@ public class SimpleAgent : MonoBehaviour {
             agent.updateRotation = false;
 
         }
-
+        
         
            
 
@@ -113,6 +142,7 @@ public class SimpleAgent : MonoBehaviour {
 
             if (timer > 4 && agent.transform.position.y > 0)
             {
+                BeenHit = false;
                 agent.enabled = true;
                 rb.isKinematic = true;
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
@@ -122,8 +152,33 @@ public class SimpleAgent : MonoBehaviour {
             }
 
         }
-	
-	}
+
+        if (transform.position.y < -10)
+        {
+            if (lives > 0)
+            {
+                lives = lives - 1;
+                
+
+                // grab random spwan point in array.
+                transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
+                agent.enabled = true;
+                rb.isKinematic = true;
+                rb.constraints = RigidbodyConstraints.FreezeRotation;
+                agent.updatePosition = true;
+                agent.SetDestination(Target);
+
+            }
+            else {
+                agent.updatePosition = false;
+                agent.updateRotation = false;
+                GetComponent<Collider>().attachedRigidbody.detectCollisions = false;
+
+            }
+
+        }
+
+    }
 
 
 
@@ -145,19 +200,7 @@ public class SimpleAgent : MonoBehaviour {
             agent.SetDestination(Target);
         }
 
-        if (transform.position.y < -10)
-        {
-            if (lives > 1)
-            {
-                lives = lives - 1;
-               // randoSpawn = Random.Range(1, 4);
-
-                // grab random spwan point in array.
-                transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
-
-            }
-
-        }
+        
 
 
     }
@@ -202,8 +245,9 @@ public class SimpleAgent : MonoBehaviour {
                 //for Enemies
                 HitObject = hit.gameObject;
 
-                if (hit.gameObject.tag != "Untagged" && hit.attachedRigidbody != null)
+                if (hit.gameObject.tag == "Attacker" && hit.attachedRigidbody != null && hit.gameObject.name != name)
                 {
+                    HitObject.GetComponent<SimpleAgent>().BeenHit = true;
                     hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
                     hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
                 }

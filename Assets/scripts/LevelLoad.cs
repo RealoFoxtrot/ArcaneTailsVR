@@ -29,10 +29,10 @@ public class LevelLoad : MonoBehaviour {
 	void Update () {
 
         //Check how many lives there are
-        playerLives = GameObject.Find("Player").GetComponent<PinballMovement>().lives;
-        enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
-        enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
-        enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
+       // playerLives = GameObject.Find("Player").GetComponent<PinballMovement>().lives;
+        //enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
+        //enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
+        //enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
 
 	    //If the player has no lives, and the enemies are still alive, start the loose countdown
         if (playerLives == 0 && winTimer == 0.0f)
