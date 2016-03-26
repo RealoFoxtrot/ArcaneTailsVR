@@ -10,15 +10,15 @@ public class EnemyArrayTracker : MonoBehaviour {
     // usually static isn't used but just for testing
     public static float CurrentShortestDis;
     public static Vector3 ClosestEnemy;
+    bool PlayerWins = false;
 
-    // list of all the enemies in the secene
-    public static GameObject[] EnemyArray = new GameObject[4];
+
+    // list so I can add player
     public static List<GameObject> EnemyList = new List<GameObject>();
 
 
     void Awake()
     {
-        EnemyArray = GameObject.FindGameObjectsWithTag("Attacker");
 
         //add enemies and player to the list
         EnemyList.AddRange(GameObject.FindGameObjectsWithTag("Attacker"));
@@ -30,25 +30,32 @@ public class EnemyArrayTracker : MonoBehaviour {
 	void Start () {
 
         // find all enemys tagged attacker, will need changing in the future.
-        print(EnemyArray.Length);
+        print(EnemyList.Count);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        foreach (GameObject enemy in EnemyArray)
+        int counter = 0;
+        foreach (GameObject enemy in EnemyList)
         {
             // check if set
             float Dis = 0;
-
-            
+            if (enemy.tag == "Attacker" && enemy.GetComponent<SimpleAgent>().lives < 1)
+            {
+              
+                counter++;
+            }
                  Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
 
-            //check to see if all the players have been eliminated
-            
-
-
+            //check to see if all the players have been eliminated player wins
+            if (counter == EnemyList.Count - 1)
+            {
+                // all enemies dead game over
+                PlayerWins = true;
+                
+            }
+           
 
             // if it isn't checking against iself and is less than the last distance
             if (Dis != 0 )
@@ -60,11 +67,6 @@ public class EnemyArrayTracker : MonoBehaviour {
             
         }
 
-     
-
-
-
-	
 	}
 
 

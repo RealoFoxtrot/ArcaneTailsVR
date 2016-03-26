@@ -61,7 +61,8 @@ public class SimpleAgent : MonoBehaviour {
         {
             
             LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
-            LivesText.transform.LookAt(-Camera.main.transform.position);
+            //want it too look at the camera but since it's attached to an object it's making it hard.
+            //LivesText.transform.LookAt(Camera.main.transform.position);
           
         }
 
@@ -116,8 +117,8 @@ public class SimpleAgent : MonoBehaviour {
 
         //print(DistanceToEnemy);
         // Timer countdown to the AI hitting the player.
-        hitTimer += 1 * Time.deltaTime;
-        if (hitTimer > 5) // every 5 seconds
+        hitTimer += 1 * Time.deltaTime + Random.Range(0.0f,0.5f);
+        if (hitTimer > 5 && !BeenHit) // every 5 seconds
         {
             HitPlayer();
             hitTimer = 0;
@@ -158,6 +159,10 @@ public class SimpleAgent : MonoBehaviour {
             if (lives > 0)
             {
                 lives = lives - 1;
+            }
+            if (lives >= 1)
+            {
+                
                 
 
                 // grab random spwan point in array.
@@ -170,10 +175,11 @@ public class SimpleAgent : MonoBehaviour {
 
             }
             else {
+                //disable renderer when dead?
                 agent.updatePosition = false;
                 agent.updateRotation = false;
                 GetComponent<Collider>().attachedRigidbody.detectCollisions = false;
-
+                
             }
 
         }
