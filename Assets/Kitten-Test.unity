@@ -1646,6 +1646,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 36fc8d6f4490b8f4188ff3d5e49766d3, type: 2}
+    - target: {fileID: 100002, guid: 802a7929c3cf0b349879d648a2d1cbb6, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 802a7929c3cf0b349879d648a2d1cbb6, type: 3}
   m_IsPrefabParent: 0
@@ -40670,6 +40674,14 @@ Prefab:
     - target: {fileID: 100002, guid: cd4f28058e56dce4490f9917c145d4ad, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: cd4f28058e56dce4490f9917c145d4ad, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cd4f28058e56dce4490f9917c145d4ad, type: 3}
+      propertyPath: m_TagString
+      value: Level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd4f28058e56dce4490f9917c145d4ad, type: 3}

@@ -191,42 +191,40 @@ public class PinballMovement : MonoBehaviour
             rb.AddRelativeForce(0, 0, vertical * speed * rb.mass * 500 * Time.deltaTime);
         }
 
-        if (CanJump == true)
+        if (CanJump && Input.GetButton("Jump"))
         {
-            rb.AddForce(0, jumpHeight * 10000, 0);
+            rb.AddForce(0, jumpHeight * 5000, 0);
         }
         
     }
 
 
 
-    void OnCollisionStay(Collision col)
+    void OnCollisionEnter(Collision col)
     {
+        print(col.gameObject.tag);
         if (col.gameObject.tag == "Level")
         {
 
             CanJump = true;
 
         }
-        else
-        {
-            CanJump = false;
-        }
+        
 
     }
 
-    //void OnCollisionExit(Collision col)
-    //{
+    void OnCollisionExit(Collision col)
+    {
 
-      //  if (col.gameObject.tag == "FloorRay")
-        //{
+        if (col.gameObject.tag == "Level")
+        {
 
-          //  CanJump = false;
+            CanJump = false;
 
-        //}
+        }
 
 
 
-    //}
+    }
 
 }
