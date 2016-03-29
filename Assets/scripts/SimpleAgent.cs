@@ -60,7 +60,7 @@ public class SimpleAgent : MonoBehaviour {
         if (LivesText)
         {
             
-            LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
+            //LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
             //want it too look at the camera but since it's attached to an object it's making it hard.
             //LivesText.transform.LookAt(Camera.main.transform.position);
           
