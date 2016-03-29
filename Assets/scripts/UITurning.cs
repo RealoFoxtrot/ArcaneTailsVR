@@ -32,11 +32,9 @@ public class UITurning : MonoBehaviour {
         
 
         //create a vector between the Camera and the player
-        pointAtCamera = cameraLocation - transform.position;
+        //pointAtCamera = cameraLocation - transform.position;
 
 
-        Quaternion turnUI = Quaternion.LookRotation(pointAtCamera);
-
-        rb.MoveRotation(turnUI);
+        transform.LookAt( 2 * transform.position - cameraLocation) ;
     }
 }
