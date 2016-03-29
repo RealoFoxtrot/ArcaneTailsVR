@@ -8,6 +8,7 @@ TagManager:
   - Attacker
   - FloorRay
   - Spawn
+  - Level
   layers:
   - Default
   - TransparentFX

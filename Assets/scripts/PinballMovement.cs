@@ -191,7 +191,7 @@ public class PinballMovement : MonoBehaviour
             rb.AddRelativeForce(0, 0, vertical * speed * rb.mass * 500 * Time.deltaTime);
         }
 
-        if (CanJump)
+        if (CanJump == true)
         {
             rb.AddForce(0, jumpHeight * 10000, 0);
         }
@@ -200,26 +200,30 @@ public class PinballMovement : MonoBehaviour
 
 
 
-    void OnCollisionEnter(Collision col)
+    void OnCollisionStay(Collision col)
     {
-        if (col.gameObject.tag == "Floor")
+        if (col.gameObject.tag == "Level")
         {
 
             CanJump = true;
 
         }
+        else
+        {
+            CanJump = false;
+        }
 
     }
 
-    void OnCollisionExit(Collision col)
-    {
+    //void OnCollisionExit(Collision col)
+    //{
 
-        if (col.gameObject.tag == "Floor")
-        {
+      //  if (col.gameObject.tag == "FloorRay")
+        //{
 
-            CanJump = false;
+          //  CanJump = false;
 
-        }
+        //}
 
 
 
