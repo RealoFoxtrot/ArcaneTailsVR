@@ -200,7 +200,7 @@ public class PinballMovement : MonoBehaviour
 
 
 
-    void OnCollisionEnter(Collision col)
+    void OnCollisionStay(Collision col)
     {
         print(col.gameObject.tag);
         if (col.gameObject.tag == "Level")
