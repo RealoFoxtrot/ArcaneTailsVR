@@ -17,7 +17,7 @@ public class LevelLoad : MonoBehaviour {
 
     private float winTimer;
     private float looseTimer;
-    public float gameEndTime = 5; //Can Change this number in the editor if it needs to be changed
+    public float gameEndTime = 5.0f; //Can Change this number in the editor if it needs to be changed
 
 
 	// Use this for initialization
