@@ -80,7 +80,7 @@ public class SimpleAgent : MonoBehaviour {
         // if enemy
         if (enemy.tag == "Attacker")
         {
-            if (enemy.name == name || enemy.GetComponent<SimpleAgent>().lives == 0)
+            if (enemy.name == name || lives == 0) //enemy.GetComponent<SimpleAgent>().lives == 0) Huh...
             {
                 //testing
                 // cast to a gameobject for the arraylist
@@ -156,10 +156,7 @@ public class SimpleAgent : MonoBehaviour {
 
         if (transform.position.y < -10)
         {
-            if (lives > 0)
-            {
-                lives = lives - 1;
-            }
+
             if (lives >= 1)
             {
                 
@@ -172,6 +169,7 @@ public class SimpleAgent : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
+                lives = lives - 1;
 
             }
             else {

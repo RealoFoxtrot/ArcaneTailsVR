@@ -59,7 +59,7 @@ public class PinballMovement : MonoBehaviour
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
-        Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
+        Physics.IgnoreCollision(GetComponent<CapsuleCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
        // Physics.IgnoreLayerCollision(0, 9);
@@ -176,13 +176,13 @@ public class PinballMovement : MonoBehaviour
         if (horizontal > 0)
         {
 
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 100 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
         }
 
         if (horizontal < 0)
         {
 
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 100 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
         }
 
         if (vertical != 0)
@@ -202,7 +202,6 @@ public class PinballMovement : MonoBehaviour
 
     void OnCollisionStay(Collision col)
     {
-        print(col.gameObject.tag);
         if (col.gameObject.tag == "Level")
         {
 
