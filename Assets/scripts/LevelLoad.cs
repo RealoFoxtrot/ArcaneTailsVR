@@ -24,40 +24,48 @@ public class LevelLoad : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
 
         //Check how many lives there are
-       // playerLives = GameObject.Find("Player").GetComponent<PinballMovement>().lives;
-        //enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
-        //enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
-        //enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
+        playerLives = GameObject.Find("Player").GetComponent<PinballMovement>().lives;
+        enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
+        enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
+        enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
 
-	    //If the player has no lives, and the enemies are still alive, start the loose countdown
-        if (playerLives == 0 )//&& winTimer == 0.0f)
+        //If the player has no lives, and the enemies are still alive, start the loose countdown
+        if (playerLives == 0)//&& winTimer == 0.0f)
         {
-            looseTimer += 1.0f * Time.deltaTime; 
+            StartCoroutine(looseTime());
+            print("loosing");
         }
-        
+
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0 )//&& looseTimer == 0.0f)
+        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0)//&& looseTimer == 0.0f)
         {
-            winTimer += 1.0f * Time.deltaTime;
+            StartCoroutine(winTime());
+            print("winning");
         }
 
+    }
 
         //Win and Loose Scene loaders. 
         //I Am planning on adjusting these to make it so it loads in either a winscene or a loose scene rather than going to the main menu
-        if (winTimer == gameEndTime)
+        IEnumerator winTime()
         {
-            SceneManager.LoadScene("MainMenu");
+        print("winner");
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("MainMenu");
+
         }
 
-        if (looseTimer == gameEndTime)
+        IEnumerator looseTime()
         {
-            SceneManager.LoadScene("MainMenu");
+        print("looser");
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("MainMenu");
         }
 
-	}
+	
 }

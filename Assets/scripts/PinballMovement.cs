@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PinballMovement : MonoBehaviour
@@ -77,8 +78,8 @@ public class PinballMovement : MonoBehaviour
 
         if (Input.GetButton("Reset"))
         {
-             transform.position = spawn1.transform.position; 
-         
+            SceneManager.LoadScene("MainMenu");
+
 
         }
 

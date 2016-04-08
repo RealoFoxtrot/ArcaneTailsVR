@@ -28119,7 +28119,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438908, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: jumpHeight
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457104, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: m_LocalScale.x
@@ -28167,7 +28167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438908, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: speed
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11438908, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: boomRadius
@@ -44577,6 +44577,24 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 139510, guid: d925d973f932ed641b303e4edfd03610, type: 2}
   m_PrefabInternal: {fileID: 959356908}
+--- !u!114 &1773727813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773727812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1683be71e02f548b9023d92d51ac31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToPreload:
+  - {fileID: 100006, guid: 60bc526f4be1e044ab9e46340b82ffb3, type: 2}
+  objectsToPreloadTimes: 01000000
+  hideObjectsInHierarchy: 0
+  spawnAsChildren: 0
+  onlyGetInactiveObjects: 0
+  instantiateIfNeeded: 0
 --- !u!136 &1773727817
 CapsuleCollider:
   m_ObjectHideFlags: 0

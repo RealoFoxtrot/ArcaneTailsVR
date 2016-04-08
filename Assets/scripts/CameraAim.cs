@@ -33,11 +33,15 @@ public class CameraAim : MonoBehaviour {
         {
             if (CurrentHit)
             {
-                if (CurrentHit.name == "StartBox" && Input.GetButton("Jump"))
+                if (CurrentHit.name == "StartBox" && Input.GetButton("Fire"))
                 {
 
                     SceneManager.LoadScene("Kitten-Test");
 
+                }
+                else if (CurrentHit.name == "QuitBox" && Input.GetButton("Fire"))
+                {
+                    Application.Quit();
                 }
             }
             
