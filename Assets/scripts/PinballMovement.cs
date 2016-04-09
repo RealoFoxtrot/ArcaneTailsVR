@@ -12,6 +12,7 @@ public class PinballMovement : MonoBehaviour
     public float boomRadius = 1f;
     public Transform Floor;
     public GameObject Camera;
+    public GameObject respawnParticle;
 
     //Private Information
     private Rigidbody rb;
@@ -23,6 +24,7 @@ public class PinballMovement : MonoBehaviour
     private Vector3 pointAtCamera;
     private Vector3 boomPosition;
     private float boomMultiplier;
+    private ParticleSystem respawnParticleSystem;
 
     //Jump Control
     private bool jump;
@@ -56,6 +58,10 @@ public class PinballMovement : MonoBehaviour
         spawn2 = GameObject.Find("Spawn2");
         spawn3 = GameObject.Find("Spawn3");
         spawn4 = GameObject.Find("Spawn4");
+
+        //particle warmup
+        respawnParticle = GameObject.Find("Respawn_Aura_Player");
+        respawnParticleSystem = GameObject.Find("Respawn_Aura_Player").GetComponent<ParticleSystem>();
 
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
@@ -135,6 +141,11 @@ public class PinballMovement : MonoBehaviour
                 { transform.position = spawn3.transform.position; }
                 else if (randoSpawn == 4)
                 { transform.position = spawn4.transform.position; }
+
+                respawnParticle.transform.position = transform.position;
+                respawnParticleSystem.Play(true);
+
+
             }
 
 

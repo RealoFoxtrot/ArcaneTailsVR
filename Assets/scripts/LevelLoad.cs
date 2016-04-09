@@ -35,14 +35,14 @@ public class LevelLoad : MonoBehaviour {
         enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
 
         //If the player has no lives, and the enemies are still alive, start the loose countdown
-        if (playerLives == 0)//&& winTimer == 0.0f)
+        if (playerLives == -1)//&& winTimer == 0.0f)
         {
             StartCoroutine(looseTime());
             print("loosing");
         }
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0)//&& looseTimer == 0.0f)
+        if (enemy1Lives == -1 && enemy2Lives == -1 && enemy3Lives == -1)//&& looseTimer == 0.0f)
         {
             StartCoroutine(winTime());
             print("winning");
