@@ -142,9 +142,6 @@ public class PinballMovement : MonoBehaviour
                 else if (randoSpawn == 4)
                 { transform.position = spawn4.transform.position; }
 
-                respawnParticle.transform.position = transform.position;
-                respawnParticleSystem.Play(true);
-
 
             }
 
@@ -155,6 +152,14 @@ public class PinballMovement : MonoBehaviour
 
         }
 
+    }
+    IEnumerator Respawn()
+    {
+        yield return new WaitForEndOfFrame();
+        respawnParticle.transform.position = transform.position;
+        respawnParticleSystem.Play(true);
+        yield return new WaitForSeconds(3);
+        respawnParticleSystem.Stop(true);
     }
 
     //Disable the controls and start spinning the player
