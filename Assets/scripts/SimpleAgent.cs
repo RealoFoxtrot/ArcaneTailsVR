@@ -157,7 +157,7 @@ public class SimpleAgent : MonoBehaviour {
         if (transform.position.y < -10)
         {
 
-            if (lives >= 1)
+            if (lives > -1)
             {
                 
                 

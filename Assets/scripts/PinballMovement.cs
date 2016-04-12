@@ -60,8 +60,8 @@ public class PinballMovement : MonoBehaviour
         spawn4 = GameObject.Find("Spawn4");
 
         //particle warmup
-        respawnParticle = GameObject.Find("Respawn_Aura_Player");
-        respawnParticleSystem = GameObject.Find("Respawn_Aura_Player").GetComponent<ParticleSystem>();
+        // respawnParticle = GameObject.Find("Respawn_Aura_Player");
+        respawnParticleSystem = GetComponent<ParticleSystem>();
 
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
@@ -129,7 +129,7 @@ public class PinballMovement : MonoBehaviour
 
         if (transform.position.y < -10)
         {
-            if (lives > 0)
+            if (lives > -1)
             {
                 lives -= 1;
                 randoSpawn = Random.Range(1, 4);
@@ -141,7 +141,7 @@ public class PinballMovement : MonoBehaviour
                 { transform.position = spawn3.transform.position; }
                 else if (randoSpawn == 4)
                 { transform.position = spawn4.transform.position; }
-
+                StartCoroutine(Respawn());
 
             }
 
