@@ -10,9 +10,10 @@ public class SimpleAgent : MonoBehaviour {
     public Transform Floor;
     GameObject HitObject;
     public GameObject EnemyDebug;
+    public GameObject respawnParticle;
 
 
-    
+
     private float boomForce = 1000;
     private float DistanceToEnemy;
 
@@ -170,6 +171,7 @@ public class SimpleAgent : MonoBehaviour {
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
                 lives = lives - 1;
+                StartCoroutine(Respawn());
 
             }
             else {
@@ -184,7 +186,14 @@ public class SimpleAgent : MonoBehaviour {
 
     }
 
-
+    IEnumerator Respawn()
+    {
+        yield return new WaitForEndOfFrame();
+        respawnParticle.transform.position = transform.position;
+        respawnParticle.SetActive(true);
+        yield return new WaitForSeconds(3);
+        respawnParticle.SetActive(false);
+    }
 
     void FixedUpdate()
     {

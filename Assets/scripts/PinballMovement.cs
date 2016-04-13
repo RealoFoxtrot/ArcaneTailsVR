@@ -157,9 +157,9 @@ public class PinballMovement : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         respawnParticle.transform.position = transform.position;
-        respawnParticleSystem.Play(true);
+        respawnParticle.SetActive(true);
         yield return new WaitForSeconds(3);
-        respawnParticleSystem.Stop(true);
+        respawnParticle.SetActive(false);
     }
 
     //Disable the controls and start spinning the player
