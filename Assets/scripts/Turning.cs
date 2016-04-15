@@ -34,10 +34,10 @@ public class Turning : MonoBehaviour {
 
             //create a vector between the crosshair and the player
             pointAtCrossHair = crossHair - transform.position;
-            //pointAtCrossHair.y = 0.3f;
+            pointAtCrossHair.y = 0;
 
             Quaternion turnPlayer = Quaternion.LookRotation(pointAtCrossHair);
-
+            
             rb.MoveRotation(turnPlayer);
         }
 

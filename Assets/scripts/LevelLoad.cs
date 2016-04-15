@@ -15,10 +15,9 @@ public class LevelLoad : MonoBehaviour {
     private int enemy2Lives;
     private int enemy3Lives;
 
-    private float winTimer;
+    private float timer;
     private float looseTimer;
     public float gameEndTime = 5.0f; //Can Change this number in the editor if it needs to be changed
-
 
 	// Use this for initialization
 	void Start () {
@@ -37,21 +36,33 @@ public class LevelLoad : MonoBehaviour {
         //If the player has no lives, and the enemies are still alive, start the loose countdown
         if (playerLives == -1)//&& winTimer == 0.0f)
         {
-            StartCoroutine(looseTime());
+            //StartCoroutine(looseTime());
+            timer += 1.0f;
             print("loosing");
         }
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
         if (enemy1Lives == -1 && enemy2Lives == -1 && enemy3Lives == -1)//&& looseTimer == 0.0f)
         {
-            StartCoroutine(winTime());
+            //StartCoroutine(winTime());
+            timer += 1.0f;
             print("winning");
+        }
+
+
+        if (timer >= 5)
+        {
+
+            timer = 0;
+            LoadMainMenu();
+
         }
 
     }
 
         //Win and Loose Scene loaders. 
         //I Am planning on adjusting these to make it so it loads in either a winscene or a loose scene rather than going to the main menu
+        //needs timer instead of coroutine. This does each frame create a coroutine.
         IEnumerator winTime()
         {
         print("winner");
@@ -66,6 +77,13 @@ public class LevelLoad : MonoBehaviour {
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("MainMenu");
         }
+
+
+    void LoadMainMenu()
+    {
+        print("loading main menu scene");
+        SceneManager.LoadScene("MainMenu");
+    }
 
 	
 }

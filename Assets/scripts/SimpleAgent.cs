@@ -14,7 +14,7 @@ public class SimpleAgent : MonoBehaviour {
 
 
 
-    private float boomForce = 1000;
+    private float boomForce = 200;
     private float DistanceToEnemy;
 
 
@@ -32,7 +32,14 @@ public class SimpleAgent : MonoBehaviour {
     public int lives;
     private int randoSpawn;
 
-	// Use this for initialization
+    // Use this for initialization
+
+    void Awake() {
+        DontDestroyOnLoad(enemy);
+        
+
+    }
+
 	void Start () {
 
         agent = GetComponent<NavMeshAgent>();
@@ -67,7 +74,7 @@ public class SimpleAgent : MonoBehaviour {
           
         }
 
-        if (enemy.tag == "Player")
+        if (enemy && enemy.tag == "Player")
         {
             if (enemy.GetComponent<PinballMovement>().lives == 0 || enemy.name == name)
             {
@@ -79,7 +86,7 @@ public class SimpleAgent : MonoBehaviour {
         }
 
         // if enemy
-        if (enemy.tag == "Attacker")
+        if (enemy && enemy.tag == "Attacker")
         {
             if (enemy.name == name || lives == 0) //enemy.GetComponent<SimpleAgent>().lives == 0) Huh...
             {
@@ -91,8 +98,13 @@ public class SimpleAgent : MonoBehaviour {
         }
 
         //set target
-        Target = enemy.transform.position;
-        DistanceToEnemy = Vector3.Distance(transform.position, Target);
+        if (enemy)
+        {
+            Target = enemy.transform.position;
+            DistanceToEnemy = Vector3.Distance(transform.position, Target);
+
+        }
+        
 
         if (Input.GetButton("Reset"))
         {
@@ -157,8 +169,10 @@ public class SimpleAgent : MonoBehaviour {
 
         if (transform.position.y < -10)
         {
+            lives -= 1;
 
-            if (lives > -1)
+
+            if (lives > 0)
             {
                 
                 
@@ -170,7 +184,7 @@ public class SimpleAgent : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
-                lives = lives - 1;
+                
                 StartCoroutine(Respawn());
 
             }
@@ -205,7 +219,7 @@ public class SimpleAgent : MonoBehaviour {
         {
 
             Vector3 targetLookAt = Target - transform.position;
-
+            targetLookAt.y = 0;
             Quaternion AILook = Quaternion.LookRotation(targetLookAt);
 
 
