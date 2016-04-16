@@ -22,6 +22,7 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject BoomPos;
     float timer = 0;
     float RespawnTimer = 0;
+    float waitTimer = 0;
     float hitTimer = 0;
     public float DisToEn;
     public GameObject enemy;
@@ -44,6 +45,8 @@ public class SimpleAgent : MonoBehaviour {
 
 	void Start () {
 
+
+        waitTimer = 5;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         rb = GetComponent<Rigidbody>();
@@ -67,6 +70,19 @@ public class SimpleAgent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (waitTimer > 0)
+        {
+            //wait for 5 seconds;
+            agent.updatePosition = false;
+            agent.enabled = false;
+            waitTimer -= 1.0f * Time.deltaTime;
+
+        }
+        else {
+            agent.updatePosition = true;
+            agent.enabled = true;
+
+        }
         
         // if there is an enemy and the enemy's tag is player then make that the target
         if (enemy && enemy.tag == "Player")
@@ -179,11 +195,12 @@ public class SimpleAgent : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
-                Respawn();
+
+                RespawnParticles();
 
             }
             else {
-                //disable renderer when dead?
+                //disable renderer when dead? 
                 agent.updatePosition = false;
                 agent.updateRotation = false;
                 GetComponent<Collider>().attachedRigidbody.detectCollisions = false;
@@ -196,7 +213,7 @@ public class SimpleAgent : MonoBehaviour {
 
     
 
-    void Respawn()
+    void RespawnParticles()
     {
         RespawnTimer += 1.0f * Time.deltaTime;
         respawnParticle.transform.position = transform.position;
