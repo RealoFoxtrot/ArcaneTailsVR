@@ -21,6 +21,7 @@ public class SimpleAgent : MonoBehaviour {
     public float boomRadius = 2f;
     public GameObject BoomPos;
     float timer = 0;
+    float RespawnTimer = 0;
     float hitTimer = 0;
     public float DisToEn;
     public GameObject enemy;
@@ -31,7 +32,8 @@ public class SimpleAgent : MonoBehaviour {
     //Respawn System
     public int lives;
     private int randoSpawn;
-
+    //Enums
+    enum EnemyState {Moving, Attacking, Attacked};
     // Use this for initialization
 
     void Awake() {
@@ -65,15 +67,8 @@ public class SimpleAgent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (LivesText)
-        {
-            
-            //LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
-            //want it too look at the camera but since it's attached to an object it's making it hard.
-            //LivesText.transform.LookAt(Camera.main.transform.position);
-          
-        }
-
+        
+        // if there is an enemy and the enemy's tag is player then make that the target
         if (enemy && enemy.tag == "Player")
         {
             if (enemy.GetComponent<PinballMovement>().lives == 0 || enemy.name == name)
@@ -184,8 +179,7 @@ public class SimpleAgent : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
-                
-                StartCoroutine(Respawn());
+                Respawn();
 
             }
             else {
@@ -200,13 +194,20 @@ public class SimpleAgent : MonoBehaviour {
 
     }
 
-    IEnumerator Respawn()
+    
+
+    void Respawn()
     {
-        yield return new WaitForEndOfFrame();
+        RespawnTimer += 1.0f * Time.deltaTime;
         respawnParticle.transform.position = transform.position;
         respawnParticle.SetActive(true);
-        yield return new WaitForSeconds(3);
-        respawnParticle.SetActive(false);
+        if (RespawnTimer > 3)
+        {
+            RespawnTimer = 0;
+            respawnParticle.SetActive(false);
+
+        }
+
     }
 
     void FixedUpdate()

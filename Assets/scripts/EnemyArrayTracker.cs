@@ -10,6 +10,7 @@ public class EnemyArrayTracker : MonoBehaviour {
     // usually static isn't used but just for testing
     public static float CurrentShortestDis;
     public static Vector3 ClosestEnemy;
+    public static bool IsWinner = false;
     bool PlayerWins = false;
 
 
@@ -21,7 +22,7 @@ public class EnemyArrayTracker : MonoBehaviour {
     {
 
         //add enemies and player to the list
-        EnemyList.Clear(); // this fixed the problems I am having with the enemiews no9t bieng there when the level is reloaded.
+        EnemyList.Clear(); // this fixed the problems I am having with the enemiews not bieng there when the level is reloaded.
         EnemyList.AddRange(GameObject.FindGameObjectsWithTag("Attacker"));
         EnemyList.Add(GameObject.FindGameObjectWithTag("Player"));
         
@@ -38,6 +39,7 @@ public class EnemyArrayTracker : MonoBehaviour {
         print(EnemyList.Count);
         for (int i = 0; i < EnemyList.Count; i++)
         {
+       
 
             print(EnemyList[i].name);
 
@@ -51,25 +53,18 @@ public class EnemyArrayTracker : MonoBehaviour {
         {
             // check if set
             float Dis = 0;
-            if (enemy.tag == "Attacker" && enemy.GetComponent<SimpleAgent>().lives < 1)
-            {
-              
-                counter++;
-            }
+            //just check all in the list not just the enemies.
+                if (enemy.tag == "Attacker" && enemy.GetComponent<SimpleAgent>().lives < 1 
+                 || enemy.tag == "Player" && enemy.GetComponent<PinballMovement>().lives < 1)
+                {
+
+                    counter++;
+                }
+            
+
                  Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
 
-            //check to see if all the players have been eliminated player wins
-            if (counter == EnemyList.Count - 1)
-            {
-               //someone isn't dead.
-                
-            }
-
-            if (counter == EnemyList.Count)
-            {
-                // all are dead. Eh? how did that happen?
-
-            }
+           
            
 
             // if it isn't checking against iself and is less than the last distance
@@ -82,7 +77,27 @@ public class EnemyArrayTracker : MonoBehaviour {
             
         }
 
-	}
+        //check after all enemies have been gone through.
+        //check to see if all the players have been eliminated player wins
+        if (counter == EnemyList.Count - 1)
+        {
+            //someone isn't dead. They Win!
+            // apply winning state. Do Celebration after.
+            IsWinner = true;
+
+
+        }
+
+
+
+        if (counter == EnemyList.Count)
+        {
+            // all are dead. Eh? how did that happen? Throw an error.
+            Debug.LogError("All players and enemies are dead, that isn't supposed to happen.");
+
+        }
+
+    }
 
 
     Vector3 getCurrentEnemyPosition()
