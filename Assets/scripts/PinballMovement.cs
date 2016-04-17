@@ -59,10 +59,6 @@ public class PinballMovement : MonoBehaviour
         spawn3 = GameObject.Find("Spawn3");
         spawn4 = GameObject.Find("Spawn4");
 
-        //particle warmup
-        // respawnParticle = GameObject.Find("Respawn_Aura_Player");
-        respawnParticleSystem = GetComponent<ParticleSystem>();
-
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
