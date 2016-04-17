@@ -78,7 +78,9 @@ public class SimpleAgent : MonoBehaviour {
             waitTimer -= 1.0f * Time.deltaTime;
 
         }
-        else {
+        else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
+        {
+            //creating errors
             agent.updatePosition = true;
             agent.enabled = true;
 
@@ -87,7 +89,7 @@ public class SimpleAgent : MonoBehaviour {
         // if there is an enemy and the enemy's tag is player then make that the target
         if (enemy && enemy.tag == "Player")
         {
-            if (enemy.GetComponent<PinballMovement>().lives == 0 || enemy.name == name)
+            if (enemy.GetComponent<PinballMovement>().lives <= 0)
             {
                 enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
                 EnemyDebug = enemy;
@@ -96,15 +98,28 @@ public class SimpleAgent : MonoBehaviour {
 
         }
 
+        //NOTE: Still need to find a way to disable the enemy when there are no other players on the arena or they are all dead.
         // if enemy
         if (enemy && enemy.tag == "Attacker")
         {
-            if (enemy.name == name || lives == 0) //enemy.GetComponent<SimpleAgent>().lives == 0) Huh...
+            if (!EnemyArrayTracker.IsWinner)
             {
-                //testing
-                // cast to a gameobject for the arraylist
-                enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
-                EnemyDebug = enemy;
+                if (enemy.name == name || lives == 0 || enemy.transform.position.y < 0)
+                {
+                    //testing
+                    // cast to a gameobject for the arraylist
+                    //print("Resetting enemy for: " + gameObject.name);
+                    enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
+
+                    EnemyDebug = enemy;
+                }
+            }
+            else
+            {
+                print("There is a winner");
+                agent.updateRotation = false;
+                agent.updatePosition = false;
+                agent.enabled = false;
             }
         }
 
@@ -155,7 +170,6 @@ public class SimpleAgent : MonoBehaviour {
 
 
         }
-        
 
 
         if (!agent.enabled )
@@ -178,15 +192,15 @@ public class SimpleAgent : MonoBehaviour {
 
         }
 
-        if (transform.position.y < -10)
+        if (transform.position.y < -5)
         {
             lives -= 1;
 
 
             if (lives > 0)
             {
-                
-                
+
+
 
                 // grab random spwan point in array.
                 transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
@@ -199,13 +213,21 @@ public class SimpleAgent : MonoBehaviour {
                 RespawnParticles();
 
             }
-            else {
+            else
+            {
                 //disable renderer when dead? 
                 agent.updatePosition = false;
                 agent.updateRotation = false;
+                
                 GetComponent<Collider>().attachedRigidbody.detectCollisions = false;
                 
+
             }
+
+        }
+        else
+        {
+
 
         }
 
@@ -218,12 +240,12 @@ public class SimpleAgent : MonoBehaviour {
         RespawnTimer += 1.0f * Time.deltaTime;
         respawnParticle.transform.position = transform.position;
         respawnParticle.SetActive(true);
-        if (RespawnTimer > 3)
+        /*if (RespawnTimer > 3)
         {
             RespawnTimer = 0;
             respawnParticle.SetActive(false);
 
-        }
+        }*/
 
     }
 
