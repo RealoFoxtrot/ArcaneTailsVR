@@ -7,6 +7,8 @@ public class PushBackForce : MonoBehaviour {
     private float boomMultiplier;
     public float boomRadius;
 
+    public GameObject AttackParticleFlash;
+
     Vector3 explosionPos;
     Collider[] colliders;
     GameObject[] Enemies;
@@ -32,6 +34,7 @@ public class PushBackForce : MonoBehaviour {
         // player pushback
         if (Input.GetButton("Fire"))
         {
+            StartCoroutine("AttackParticle");
             foreach (Collider hit in Physics.OverlapSphere(transform.position, boomRadius))
             {
 
@@ -66,6 +69,15 @@ public class PushBackForce : MonoBehaviour {
 
 
 
+    }
+
+    IEnumerator AttackParticle()
+    {
+        yield return new WaitForEndOfFrame();
+        AttackParticleFlash.transform.position = transform.position;
+        AttackParticleFlash.SetActive(true);
+        yield return new WaitForSeconds(0.4f);
+        AttackParticleFlash.SetActive(false);
     }
 
     void FixedUpdate()

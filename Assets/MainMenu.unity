@@ -584,6 +584,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 2062237492}
   - 82: {fileID: 2062237491}
+<<<<<<< HEAD
+  - 114: {fileID: 2062237493}
+=======
+>>>>>>> Unity-1.3-Test
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -600,7 +604,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< HEAD
+  m_audioClip: {fileID: 8300000, guid: 623e3d24053762d40b82c37da187d7d6, type: 3}
+=======
   m_audioClip: {fileID: 8300000, guid: 7d73c01eedb5a11429b8bb66dbf02284, type: 3}
+>>>>>>> Unity-1.3-Test
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -677,6 +685,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+<<<<<<< HEAD
+--- !u!114 &2062237493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062237490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b4516ecdc05f343aa40e8a1528cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicStart: {fileID: 8300000, guid: 623e3d24053762d40b82c37da187d7d6, type: 3}
+  MusicLoop: {fileID: 8300000, guid: 27006ae0ecfae024ebf09059b3dd6310, type: 3}
+=======
+>>>>>>> Unity-1.3-Test
 --- !u!1 &2146301550
 GameObject:
   m_ObjectHideFlags: 0
