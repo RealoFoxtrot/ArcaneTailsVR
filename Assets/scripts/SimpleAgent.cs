@@ -10,16 +10,19 @@ public class SimpleAgent : MonoBehaviour {
     public Transform Floor;
     GameObject HitObject;
     public GameObject EnemyDebug;
+    public GameObject respawnParticle;
 
 
-    
-    private float boomForce = 1000;
+
+    private float boomForce = 200;
     private float DistanceToEnemy;
 
 
     public float boomRadius = 2f;
     public GameObject BoomPos;
     float timer = 0;
+    float RespawnTimer = 0;
+    float waitTimer = 0;
     float hitTimer = 0;
     public float DisToEn;
     public GameObject enemy;
@@ -30,10 +33,20 @@ public class SimpleAgent : MonoBehaviour {
     //Respawn System
     public int lives;
     private int randoSpawn;
+    //Enums
+    enum EnemyState {Moving, Attacking, Attacked};
+    // Use this for initialization
 
-	// Use this for initialization
+    void Awake() {
+        DontDestroyOnLoad(enemy);
+        
+
+    }
+
 	void Start () {
 
+
+        waitTimer = 5;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         rb = GetComponent<Rigidbody>();
@@ -57,18 +70,26 @@ public class SimpleAgent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (LivesText)
+        if (waitTimer > 0)
         {
-            
-            //LivesText.GetComponent<TextMesh>().text = "Lives: " + lives;
-            //want it too look at the camera but since it's attached to an object it's making it hard.
-            //LivesText.transform.LookAt(Camera.main.transform.position);
-          
-        }
+            //wait for 5 seconds;
+            agent.updatePosition = false;
+            agent.enabled = false;
+            waitTimer -= 1.0f * Time.deltaTime;
 
-        if (enemy.tag == "Player")
+        }
+        else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
         {
-            if (enemy.GetComponent<PinballMovement>().lives == 0 || enemy.name == name)
+            //creating errors
+            agent.updatePosition = true;
+            agent.enabled = true;
+
+        }
+        
+        // if there is an enemy and the enemy's tag is player then make that the target
+        if (enemy && enemy.tag == "Player")
+        {
+            if (enemy.GetComponent<PinballMovement>().lives <= 0)
             {
                 enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
                 EnemyDebug = enemy;
@@ -77,21 +98,39 @@ public class SimpleAgent : MonoBehaviour {
 
         }
 
+        //NOTE: Still need to find a way to disable the enemy when there are no other players on the arena or they are all dead.
         // if enemy
-        if (enemy.tag == "Attacker")
+        if (enemy && enemy.tag == "Attacker")
         {
-            if (enemy.name == name || enemy.GetComponent<SimpleAgent>().lives == 0)
+            if (!EnemyArrayTracker.IsWinner)
             {
-                //testing
-                // cast to a gameobject for the arraylist
-                enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
-                EnemyDebug = enemy;
+                if (enemy.name == name || lives == 0 || enemy.transform.position.y < 0)
+                {
+                    //testing
+                    // cast to a gameobject for the arraylist
+                    //print("Resetting enemy for: " + gameObject.name);
+                    enemy = EnemyArrayTracker.EnemyList[Random.Range(0, EnemyArrayTracker.EnemyList.Count)];
+
+                    EnemyDebug = enemy;
+                }
+            }
+            else
+            {
+                print("There is a winner");
+                agent.updateRotation = false;
+                agent.updatePosition = false;
+                agent.enabled = false;
             }
         }
 
         //set target
-        Target = enemy.transform.position;
-        DistanceToEnemy = Vector3.Distance(transform.position, Target);
+        if (enemy)
+        {
+            Target = enemy.transform.position;
+            DistanceToEnemy = Vector3.Distance(transform.position, Target);
+
+        }
+        
 
         if (Input.GetButton("Reset"))
         {
@@ -131,7 +170,6 @@ public class SimpleAgent : MonoBehaviour {
 
 
         }
-        
 
 
         if (!agent.enabled )
@@ -154,16 +192,15 @@ public class SimpleAgent : MonoBehaviour {
 
         }
 
-        if (transform.position.y < -10)
+        if (transform.position.y < -5)
         {
+            lives -= 1;
+
+
             if (lives > 0)
             {
-                lives = lives - 1;
-            }
-            if (lives >= 1)
-            {
-                
-                
+
+
 
                 // grab random spwan point in array.
                 transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
@@ -173,20 +210,44 @@ public class SimpleAgent : MonoBehaviour {
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
 
+                RespawnParticles();
+
             }
-            else {
-                //disable renderer when dead?
+            else
+            {
+                //disable renderer when dead? 
                 agent.updatePosition = false;
                 agent.updateRotation = false;
+                
                 GetComponent<Collider>().attachedRigidbody.detectCollisions = false;
                 
+
             }
+
+        }
+        else
+        {
+
 
         }
 
     }
 
+    
 
+    void RespawnParticles()
+    {
+        RespawnTimer += 1.0f * Time.deltaTime;
+        respawnParticle.transform.position = transform.position;
+        respawnParticle.SetActive(true);
+        /*if (RespawnTimer > 3)
+        {
+            RespawnTimer = 0;
+            respawnParticle.SetActive(false);
+
+        }*/
+
+    }
 
     void FixedUpdate()
     {
@@ -198,7 +259,7 @@ public class SimpleAgent : MonoBehaviour {
         {
 
             Vector3 targetLookAt = Target - transform.position;
-
+            targetLookAt.y = 0;
             Quaternion AILook = Quaternion.LookRotation(targetLookAt);
 
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PinballMovement : MonoBehaviour
@@ -11,6 +12,7 @@ public class PinballMovement : MonoBehaviour
     public float boomRadius = 1f;
     public Transform Floor;
     public GameObject Camera;
+    public GameObject respawnParticle;
 
     //Private Information
     private Rigidbody rb;
@@ -22,6 +24,7 @@ public class PinballMovement : MonoBehaviour
     private Vector3 pointAtCamera;
     private Vector3 boomPosition;
     private float boomMultiplier;
+    private ParticleSystem respawnParticleSystem;
 
     //Jump Control
     private bool jump;
@@ -59,7 +62,7 @@ public class PinballMovement : MonoBehaviour
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
          colliders = Physics.OverlapSphere(explosionPos, 6);
-        Physics.IgnoreCollision(GetComponent<SphereCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
+        Physics.IgnoreCollision(GetComponent<CapsuleCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
        // Physics.IgnoreLayerCollision(0, 9);
@@ -77,8 +80,8 @@ public class PinballMovement : MonoBehaviour
 
         if (Input.GetButton("Reset"))
         {
-             transform.position = spawn1.transform.position; 
-         
+            SceneManager.LoadScene("MainMenu");
+
 
         }
 
@@ -122,7 +125,7 @@ public class PinballMovement : MonoBehaviour
 
         if (transform.position.y < -10)
         {
-            if (lives > 0)
+            if (lives > -1)
             {
                 lives -= 1;
                 randoSpawn = Random.Range(1, 4);
@@ -134,6 +137,8 @@ public class PinballMovement : MonoBehaviour
                 { transform.position = spawn3.transform.position; }
                 else if (randoSpawn == 4)
                 { transform.position = spawn4.transform.position; }
+                StartCoroutine(Respawn());
+
             }
 
 
@@ -143,6 +148,14 @@ public class PinballMovement : MonoBehaviour
 
         }
 
+    }
+    IEnumerator Respawn()
+    {
+        yield return new WaitForEndOfFrame();
+        respawnParticle.transform.position = transform.position;
+        respawnParticle.SetActive(true);
+        yield return new WaitForSeconds(3);
+        respawnParticle.SetActive(false);
     }
 
     //Disable the controls and start spinning the player
@@ -202,7 +215,6 @@ public class PinballMovement : MonoBehaviour
 
     void OnCollisionStay(Collision col)
     {
-        print(col.gameObject.tag);
         if (col.gameObject.tag == "Level")
         {
 
