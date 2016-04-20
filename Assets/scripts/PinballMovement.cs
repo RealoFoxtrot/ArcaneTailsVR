@@ -167,6 +167,7 @@ public class PinballMovement : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         respawnParticle.transform.position = transform.position;
+        respawnParticle.transform.Translate(Vector3.up * -0.1f);
         respawnParticle.SetActive(true);
         yield return new WaitForSeconds(3);
         respawnParticle.SetActive(false);
