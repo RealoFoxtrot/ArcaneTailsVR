@@ -260,7 +260,7 @@ public class SimpleAgent : MonoBehaviour {
 
             Vector3 targetLookAt = Target - transform.position;
             targetLookAt.y = 0;
-            Quaternion AILook = Quaternion.LookRotation(targetLookAt);
+            Quaternion AILook = Quaternion.Lerp(gameObject.transform.localRotation,Quaternion.LookRotation(targetLookAt), Time.deltaTime * 4);
 
 
             rb.MoveRotation(AILook);
