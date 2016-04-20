@@ -166,7 +166,7 @@ public class PinballMovement : MonoBehaviour
     //Disable the controls and start spinning the player
     void pinballhit()
     {
-        //rb.constraints = RigidbodyConstraints.None;
+        rb.constraints = RigidbodyConstraints.None;
         //rb.AddExplosionForce(boomMultiplier, boomPosition, boomRadius, 0.1f);
     }
 

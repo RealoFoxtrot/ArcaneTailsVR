@@ -30,7 +30,7 @@ public class Turning : MonoBehaviour {
         else
         {
             //get the location of the crosshair from the script in the camera
-            rb.constraints = RigidbodyConstraints.FreezePosition;
+            //rb.constraints = RigidbodyConstraints.FreezePosition;
             crossHair = Camera.GetComponent<CameraAim>().hitTransform;
             
             //create a vector between the crosshair and the player
