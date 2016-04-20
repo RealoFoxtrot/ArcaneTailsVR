@@ -38,11 +38,9 @@ public class Turning : MonoBehaviour {
             pointAtCrossHair.y = 0;
 
             Quaternion turnPlayer = Quaternion.LookRotation(pointAtCrossHair);
-            
-                //rb.MoveRotation(turnPlayer);
 
-	transform.rotation = turnPlayer;
-            
+            //rb.MoveRotation(turnPlayer);
+            transform.rotation = turnPlayer;
 
         }
 
