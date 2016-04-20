@@ -34,7 +34,7 @@ public class PushBackForce : MonoBehaviour {
         // player pushback
         if (Input.GetButton("Fire"))
         {
-            StartCoroutine("AttackParticle");
+            //StartCoroutine("AttackParticle");
             foreach (Collider hit in Physics.OverlapSphere(transform.position, boomRadius))
             {
 
@@ -43,15 +43,15 @@ public class PushBackForce : MonoBehaviour {
                 {
 
                     agent = hit.gameObject.GetComponent<NavMeshAgent>();
+                    hit.gameObject.GetComponent<SimpleAgent>().BeenHit = true;
 
 
-
-                    agent.updatePosition = false;
-                    agent.updateRotation = false;
+                    //agent.updatePosition = false;
+                    //agent.updateRotation = false;
                     
-                    agent.enabled = false;
-                    hit.attachedRigidbody.isKinematic = false;
-                    hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
+                    //agent.enabled = false;
+                   // hit.attachedRigidbody.isKinematic = false;
+                   // hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
 
 
 

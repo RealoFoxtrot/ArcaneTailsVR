@@ -95,7 +95,7 @@ public class PinballMovement : MonoBehaviour
         jump = Input.GetButtonDown("Jump");
         
         
-        boomMultiplier = boomForce * 1000;
+        boomMultiplier = boomForce * 500;
 
 
 
@@ -123,11 +123,12 @@ public class PinballMovement : MonoBehaviour
 
         
 
-        if (transform.position.y < -10)
+        if (transform.position.y < -5)
         {
-            if (lives > -1)
+            lives -= 1;
+            if (lives > 0)
             {
-                lives -= 1;
+                //lives -= 1;
                 randoSpawn = Random.Range(1, 4);
                 if (randoSpawn == 1)
                 { transform.position = spawn1.transform.position; }
@@ -139,6 +140,10 @@ public class PinballMovement : MonoBehaviour
                 { transform.position = spawn4.transform.position; }
                 StartCoroutine(Respawn());
 
+            }
+            else
+            {
+                lives = 0;
             }
 
 
@@ -161,7 +166,7 @@ public class PinballMovement : MonoBehaviour
     //Disable the controls and start spinning the player
     void pinballhit()
     {
-        rb.constraints = RigidbodyConstraints.None;
+        //rb.constraints = RigidbodyConstraints.None;
         //rb.AddExplosionForce(boomMultiplier, boomPosition, boomRadius, 0.1f);
     }
 

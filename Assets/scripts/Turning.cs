@@ -14,7 +14,7 @@ public class Turning : MonoBehaviour {
     public GameObject Player;
     // Use this for initialization
     void Start () {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         
 
     }
@@ -25,20 +25,25 @@ public class Turning : MonoBehaviour {
 
         if (Player.GetComponent<PinballMovement>().beenhit == true)
         {
-
+            
         }
         else
         {
             //get the location of the crosshair from the script in the camera
+            rb.constraints = RigidbodyConstraints.FreezePosition;
             crossHair = Camera.GetComponent<CameraAim>().hitTransform;
-
+            
             //create a vector between the crosshair and the player
             pointAtCrossHair = crossHair - transform.position;
             pointAtCrossHair.y = 0;
 
             Quaternion turnPlayer = Quaternion.LookRotation(pointAtCrossHair);
             
-            rb.MoveRotation(turnPlayer);
+                //rb.MoveRotation(turnPlayer);
+
+	transform.rotation = turnPlayer;
+            
+
         }
 
 	}

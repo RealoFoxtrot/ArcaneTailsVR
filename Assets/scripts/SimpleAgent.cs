@@ -28,7 +28,6 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject enemy;
     public bool BeenHit = false;
     public GameObject[] spawns;
-    public GameObject LivesText;
 
     //Respawn System
     public int lives;
@@ -102,7 +101,7 @@ public class SimpleAgent : MonoBehaviour {
         // if enemy
         if (enemy && enemy.tag == "Attacker")
         {
-            if (!EnemyArrayTracker.IsWinner)
+            if (!EnemyArrayTracker.IsWinner )
             {
                 if (enemy.name == name || lives == 0 || enemy.transform.position.y < 0)
                 {
@@ -117,6 +116,7 @@ public class SimpleAgent : MonoBehaviour {
             else
             {
                 print("There is a winner");
+                Target = Camera.main.gameObject.transform.position;
                 agent.updateRotation = false;
                 agent.updatePosition = false;
                 agent.enabled = false;
@@ -303,7 +303,7 @@ public class SimpleAgent : MonoBehaviour {
                 HitObject = hit.gameObject;
 
                 HitObject.GetComponent<PinballMovement>().beenhit = true;
-                hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
+                //hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
                 hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
 
             }
