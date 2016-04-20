@@ -75,6 +75,7 @@ public class SimpleAgent : MonoBehaviour {
             agent.updatePosition = false;
             agent.enabled = false;
             waitTimer -= 1.0f * Time.deltaTime;
+            
 
         }
         else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)

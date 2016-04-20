@@ -54,6 +54,7 @@ public class LevelLoad : MonoBehaviour {
         {
 
             timer = 0;
+            EnemyArrayTracker.IsWinner = false;
             LoadMainMenu();
 
         }
