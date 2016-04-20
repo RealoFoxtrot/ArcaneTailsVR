@@ -14,7 +14,7 @@ public class Turning : MonoBehaviour {
     public GameObject Player;
     // Use this for initialization
     void Start () {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         
 
     }
@@ -37,8 +37,9 @@ public class Turning : MonoBehaviour {
             pointAtCrossHair.y = 0;
 
             Quaternion turnPlayer = Quaternion.LookRotation(pointAtCrossHair);
-            
-            rb.MoveRotation(turnPlayer);
+
+            //rb.MoveRotation(turnPlayer);
+            transform.rotation = turnPlayer;
         }
 
 	}
