@@ -13,6 +13,7 @@ public class PinballMovement : MonoBehaviour
     public Transform Floor;
     public GameObject Camera;
     public GameObject respawnParticle;
+    public float animationSpeed;
 
     //Private Information
     private Rigidbody rb;
@@ -25,6 +26,7 @@ public class PinballMovement : MonoBehaviour
     private Vector3 boomPosition;
     private float boomMultiplier;
     private ParticleSystem respawnParticleSystem;
+    private Vector3 lastPosition;
 
     //Jump Control
     private bool jump;
@@ -37,6 +39,9 @@ public class PinballMovement : MonoBehaviour
     private GameObject spawn3;
     private GameObject spawn4;
     private int randoSpawn;
+
+    //Animators
+    Animator playerAnim;
 
     //Colliders and explosion
     Vector3 explosionPos;
@@ -65,7 +70,10 @@ public class PinballMovement : MonoBehaviour
         Physics.IgnoreCollision(GetComponent<CapsuleCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
-       // Physics.IgnoreLayerCollision(0, 9);
+        // Physics.IgnoreLayerCollision(0, 9);
+
+        playerAnim = GameObject.FindGameObjectWithTag("Rat").GetComponent<Animator>();
+
     }
 
     void Update()
@@ -97,8 +105,9 @@ public class PinballMovement : MonoBehaviour
         
         boomMultiplier = boomForce * 500;
 
-
-
+        animationSpeed = (transform.position - lastPosition).magnitude;
+        lastPosition = transform.position;
+        playerAnim.SetFloat("ParentSpeed", animationSpeed);
 
         // swap between stunned and physics pinball
         if (beenhit == true)
