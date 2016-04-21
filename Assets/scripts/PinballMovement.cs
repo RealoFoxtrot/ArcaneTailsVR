@@ -88,6 +88,7 @@ public class PinballMovement : MonoBehaviour
 
         if (Input.GetButton("Reset"))
         {
+            EnemyArrayTracker.IsWinner = false;
             SceneManager.LoadScene("MainMenu");
 
 

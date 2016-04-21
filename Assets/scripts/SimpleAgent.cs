@@ -99,7 +99,7 @@ public class SimpleAgent : MonoBehaviour {
         }
 
         //NOTE: Still need to find a way to disable the enemy when there are no other players on the arena or they are all dead.
-        // if enemy
+        
         if (enemy && enemy.tag == "Attacker")
         {
             if (!EnemyArrayTracker.IsWinner )
@@ -131,14 +131,6 @@ public class SimpleAgent : MonoBehaviour {
             DistanceToEnemy = Vector3.Distance(transform.position, Target);
 
         }
-        
-
-        if (Input.GetButton("Reset"))
-        {
-            //reset enemies
-            transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
-        }
-
 
         if (BeenHit)
         {
@@ -204,10 +196,12 @@ public class SimpleAgent : MonoBehaviour {
 
 
                 // grab random spwan point in array.
+                rb.constraints = RigidbodyConstraints.FreezeRotation;
                 transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
+                
                 agent.enabled = true;
                 rb.isKinematic = true;
-                rb.constraints = RigidbodyConstraints.FreezeRotation;
+                
                 agent.updatePosition = true;
                 agent.SetDestination(Target);
 

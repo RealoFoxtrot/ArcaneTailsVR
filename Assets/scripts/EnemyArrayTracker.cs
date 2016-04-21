@@ -25,7 +25,8 @@ public class EnemyArrayTracker : MonoBehaviour {
         EnemyList.Clear(); // this fixed the problems I am having with the enemiews not bieng there when the level is reloaded.
         EnemyList.AddRange(GameObject.FindGameObjectsWithTag("Attacker"));
         EnemyList.Add(GameObject.FindGameObjectWithTag("Player"));
-        
+
+        IsWinner = false;// make sure the Iswinner is false at startup
 
     }
 
@@ -93,7 +94,7 @@ public class EnemyArrayTracker : MonoBehaviour {
         if (counter == EnemyList.Count)
         {
             // all are dead. Eh? how did that happen? Throw an error.
-            Debug.LogError("All players and enemies are dead, that isn't supposed to happen.");
+            //Debug.LogError("All players and enemies are dead, that isn't supposed to happen.");
 
         }
 
