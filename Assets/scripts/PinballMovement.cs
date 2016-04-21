@@ -128,6 +128,7 @@ public class PinballMovement : MonoBehaviour
         {
 
             beenhit = false;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
         }
 
         

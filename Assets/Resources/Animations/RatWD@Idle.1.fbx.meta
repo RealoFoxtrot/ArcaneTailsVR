@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: c5cc2e028ac0b1044af5700291082639
+timeCreated: 1461195979
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Witch_Doctor:Body
+    100004: Witch_Doctor:Cane
+    100006: Witch_Doctor:Chain_Plane
+    100008: Witch_Doctor:Ear_1_L
+    100010: Witch_Doctor:Ear_1_R
+    100012: Witch_Doctor:Ear_Base_L
+    100014: Witch_Doctor:Ear_Base_R
+    100016: Witch_Doctor:Ear_Tip_L
+    100018: Witch_Doctor:Ear_Tip_R
+    100020: Witch_Doctor:Earings
+    100022: Witch_Doctor:Elbow_L
+    100024: Witch_Doctor:Elbow_R
+    100026: Witch_Doctor:Export_Skeleton
+    100028: Witch_Doctor:Eye_L
+    100030: Witch_Doctor:Eye_L 1
+    100032: Witch_Doctor:Eye_R
+    100034: Witch_Doctor:Eye_R 1
+    100036: Witch_Doctor:Eyelid_B_L
+    100038: Witch_Doctor:Eyelid_B_R
+    100040: Witch_Doctor:Eyelid_U_L
+    100042: Witch_Doctor:Eyelid_U_R
+    100044: Witch_Doctor:Feathers
+    100046: Witch_Doctor:Foot_L
+    100048: Witch_Doctor:Foot_R
+    100050: Witch_Doctor:Forearm_L
+    100052: Witch_Doctor:Forearm_R
+    100054: Witch_Doctor:Hat
+    100056: Witch_Doctor:Hat_Mount
+    100058: Witch_Doctor:Head
+    100060: Witch_Doctor:Head 1
+    100062: Witch_Doctor:Head_Base
+    100064: Witch_Doctor:Heel_L
+    100066: Witch_Doctor:Heel_R
+    100068: Witch_Doctor:Hip_L
+    100070: Witch_Doctor:Hip_R
+    100072: Witch_Doctor:Index_Knuckle_L
+    100074: Witch_Doctor:Index_Knuckle_R
+    100076: Witch_Doctor:Index_Middle_L
+    100078: Witch_Doctor:Index_Middle_R
+    100080: Witch_Doctor:Index_Tip_L
+    100082: Witch_Doctor:Index_Tip_R
+    100084: Witch_Doctor:Knee_L
+    100086: Witch_Doctor:Knee_R
+    100088: Witch_Doctor:Middle_Elbow_L
+    100090: Witch_Doctor:Middle_Elbow_R
+    100092: Witch_Doctor:Middle_Knuckle_L
+    100094: Witch_Doctor:Middle_Knuckle_R
+    100096: Witch_Doctor:Middle_Tip_L
+    100098: Witch_Doctor:Middle_Tip_R
+    100100: Witch_Doctor:Muzzle_1
+    100102: Witch_Doctor:Muzzle_2
+    100104: Witch_Doctor:Neck
+    100106: Witch_Doctor:Overcoat
+    100108: Witch_Doctor:OverCoat_1_L
+    100110: Witch_Doctor:OverCoat_1_R
+    100112: Witch_Doctor:Overcoat_2_L
+    100114: Witch_Doctor:Overcoat_2_R
+    100116: Witch_Doctor:Pants
+    100118: Witch_Doctor:Pinky_Elbow_L
+    100120: Witch_Doctor:Pinky_Elbow_R
+    100122: Witch_Doctor:Pinky_Knuckle_L
+    100124: Witch_Doctor:Pinky_Knuckle_R
+    100126: Witch_Doctor:Pinky_Tip_L
+    100128: Witch_Doctor:Pinky_Tip_R
+    100130: Witch_Doctor:Root
+    100132: Witch_Doctor:Shoulder_L
+    100134: Witch_Doctor:Shoulder_R
+    100136: Witch_Doctor:Spine
+    100138: Witch_Doctor:Tail_1
+    100140: Witch_Doctor:Tail_2
+    100142: Witch_Doctor:Tail_3
+    100144: Witch_Doctor:Tail_4
+    100146: Witch_Doctor:Tail_Base
+    100148: Witch_Doctor:Tail_Tip
+    100150: Witch_Doctor:Thumb_Elbow_L
+    100152: Witch_Doctor:Thumb_Elbow_R
+    100154: Witch_Doctor:Thumb_Knuckle_L
+    100156: Witch_Doctor:Thumb_Knuckle_R
+    100158: Witch_Doctor:Thumb_Tip_L
+    100160: Witch_Doctor:Thumb_Tip_R
+    100162: Witch_Doctor:Toe_L
+    100164: Witch_Doctor:Toe_R
+    100166: Witch_Doctor:Weapon_Mount_L
+    100168: Witch_Doctor:Witch_Doctor_Mesh
+    100170: Witch_Doctor:Wrist_L
+    100172: Witch_Doctor:Wrist_R
+    400000: //RootNode
+    400002: Witch_Doctor:Body
+    400004: Witch_Doctor:Cane
+    400006: Witch_Doctor:Chain_Plane
+    400008: Witch_Doctor:Ear_1_L
+    400010: Witch_Doctor:Ear_1_R
+    400012: Witch_Doctor:Ear_Base_L
+    400014: Witch_Doctor:Ear_Base_R
+    400016: Witch_Doctor:Ear_Tip_L
+    400018: Witch_Doctor:Ear_Tip_R
+    400020: Witch_Doctor:Earings
+    400022: Witch_Doctor:Elbow_L
+    400024: Witch_Doctor:Elbow_R
+    400026: Witch_Doctor:Export_Skeleton
+    400028: Witch_Doctor:Eye_L
+    400030: Witch_Doctor:Eye_L 1
+    400032: Witch_Doctor:Eye_R
+    400034: Witch_Doctor:Eye_R 1
+    400036: Witch_Doctor:Eyelid_B_L
+    400038: Witch_Doctor:Eyelid_B_R
+    400040: Witch_Doctor:Eyelid_U_L
+    400042: Witch_Doctor:Eyelid_U_R
+    400044: Witch_Doctor:Feathers
+    400046: Witch_Doctor:Foot_L
+    400048: Witch_Doctor:Foot_R
+    400050: Witch_Doctor:Forearm_L
+    400052: Witch_Doctor:Forearm_R
+    400054: Witch_Doctor:Hat
+    400056: Witch_Doctor:Hat_Mount
+    400058: Witch_Doctor:Head
+    400060: Witch_Doctor:Head 1
+    400062: Witch_Doctor:Head_Base
+    400064: Witch_Doctor:Heel_L
+    400066: Witch_Doctor:Heel_R
+    400068: Witch_Doctor:Hip_L
+    400070: Witch_Doctor:Hip_R
+    400072: Witch_Doctor:Index_Knuckle_L
+    400074: Witch_Doctor:Index_Knuckle_R
+    400076: Witch_Doctor:Index_Middle_L
+    400078: Witch_Doctor:Index_Middle_R
+    400080: Witch_Doctor:Index_Tip_L
+    400082: Witch_Doctor:Index_Tip_R
+    400084: Witch_Doctor:Knee_L
+    400086: Witch_Doctor:Knee_R
+    400088: Witch_Doctor:Middle_Elbow_L
+    400090: Witch_Doctor:Middle_Elbow_R
+    400092: Witch_Doctor:Middle_Knuckle_L
+    400094: Witch_Doctor:Middle_Knuckle_R
+    400096: Witch_Doctor:Middle_Tip_L
+    400098: Witch_Doctor:Middle_Tip_R
+    400100: Witch_Doctor:Muzzle_1
+    400102: Witch_Doctor:Muzzle_2
+    400104: Witch_Doctor:Neck
+    400106: Witch_Doctor:Overcoat
+    400108: Witch_Doctor:OverCoat_1_L
+    400110: Witch_Doctor:OverCoat_1_R
+    400112: Witch_Doctor:Overcoat_2_L
+    400114: Witch_Doctor:Overcoat_2_R
+    400116: Witch_Doctor:Pants
+    400118: Witch_Doctor:Pinky_Elbow_L
+    400120: Witch_Doctor:Pinky_Elbow_R
+    400122: Witch_Doctor:Pinky_Knuckle_L
+    400124: Witch_Doctor:Pinky_Knuckle_R
+    400126: Witch_Doctor:Pinky_Tip_L
+    400128: Witch_Doctor:Pinky_Tip_R
+    400130: Witch_Doctor:Root
+    400132: Witch_Doctor:Shoulder_L
+    400134: Witch_Doctor:Shoulder_R
+    400136: Witch_Doctor:Spine
+    400138: Witch_Doctor:Tail_1
+    400140: Witch_Doctor:Tail_2
+    400142: Witch_Doctor:Tail_3
+    400144: Witch_Doctor:Tail_4
+    400146: Witch_Doctor:Tail_Base
+    400148: Witch_Doctor:Tail_Tip
+    400150: Witch_Doctor:Thumb_Elbow_L
+    400152: Witch_Doctor:Thumb_Elbow_R
+    400154: Witch_Doctor:Thumb_Knuckle_L
+    400156: Witch_Doctor:Thumb_Knuckle_R
+    400158: Witch_Doctor:Thumb_Tip_L
+    400160: Witch_Doctor:Thumb_Tip_R
+    400162: Witch_Doctor:Toe_L
+    400164: Witch_Doctor:Toe_R
+    400166: Witch_Doctor:Weapon_Mount_L
+    400168: Witch_Doctor:Witch_Doctor_Mesh
+    400170: Witch_Doctor:Wrist_L
+    400172: Witch_Doctor:Wrist_R
+    4300000: Witch_Doctor:Body
+    4300002: Witch_Doctor:Overcoat
+    4300004: Witch_Doctor:Chain_Plane
+    4300006: Witch_Doctor:Head
+    4300008: Witch_Doctor:Eye_R
+    4300010: Witch_Doctor:Eyelid_B_R
+    4300012: Witch_Doctor:Eyelid_U_R
+    4300014: Witch_Doctor:Eye_L
+    4300016: Witch_Doctor:Eyelid_B_L
+    4300018: Witch_Doctor:Eyelid_U_L
+    4300020: Witch_Doctor:Earings
+    4300022: Witch_Doctor:Hat
+    4300024: Witch_Doctor:Feathers
+    4300026: Witch_Doctor:Pants
+    4300028: Witch_Doctor:Cane
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Witch_Doctor:Body
+    13700002: Witch_Doctor:Cane
+    13700004: Witch_Doctor:Chain_Plane
+    13700006: Witch_Doctor:Earings
+    13700008: Witch_Doctor:Eye_L
+    13700010: Witch_Doctor:Eye_R
+    13700012: Witch_Doctor:Eyelid_B_L
+    13700014: Witch_Doctor:Eyelid_B_R
+    13700016: Witch_Doctor:Eyelid_U_L
+    13700018: Witch_Doctor:Eyelid_U_R
+    13700020: Witch_Doctor:Feathers
+    13700022: Witch_Doctor:Hat
+    13700024: Witch_Doctor:Head
+    13700026: Witch_Doctor:Overcoat
+    13700028: Witch_Doctor:Pants
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
