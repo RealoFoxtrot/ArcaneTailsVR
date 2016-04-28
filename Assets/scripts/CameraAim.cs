@@ -9,15 +9,16 @@ public class CameraAim : MonoBehaviour {
     public GameObject hitCube;
     public GameObject Player;
     public GameObject CurrentHit;
+    public static GameObject DebugHit;
     int floorMask;
-
+    int EnemyMask;
 	// Use this for initialization
 	void Start () {
          
         playerCamera = GetComponent<Camera>();
         hitTransform = new Vector3();
         floorMask = LayerMask.GetMask("Floor");
-
+        EnemyMask = LayerMask.GetMask("Default");
     }
 	
 	// Update is called once per frame
@@ -50,18 +51,19 @@ public class CameraAim : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, 1000, floorMask))
         {
 
-               
-                hitTransform = new Vector3(hit.point.x, hit.point.y, hit.point.z);
-
+            
+            
+             hitTransform = new Vector3(hit.point.x, hit.point.y, hit.point.z);
+                
 
 
         }
 
-        if (Physics.Raycast(ray, out hit, 1000))
+        if (Physics.Raycast(ray, out hit, 1000, EnemyMask))
         {
+            DebugHit = hit.collider.gameObject;
             CurrentHit = hit.collider.gameObject;
-           
-           // print(hit.collider.gameObject);
+            // print(hit.collider.gameObject);
         }
 
 

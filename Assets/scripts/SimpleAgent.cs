@@ -33,7 +33,7 @@ public class SimpleAgent : MonoBehaviour {
     public int lives;
     private int randoSpawn;
     //Enums
-    enum EnemyState {Moving, Attacking, Attacked};
+    //enum EnemyState {Moving, Attacking, Attacked};
     // Use this for initialization
 
     void Awake() {
@@ -68,6 +68,8 @@ public class SimpleAgent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+       
 
         if (waitTimer > 0)
         {
@@ -147,7 +149,7 @@ public class SimpleAgent : MonoBehaviour {
 
 
 
-        //print(DistanceToEnemy);
+       
         // Timer countdown to the AI hitting the player.
         hitTimer += 1 * Time.deltaTime + Random.Range(0.0f,0.5f);
         if (hitTimer > 5 && !BeenHit) // every 5 seconds
@@ -194,11 +196,11 @@ public class SimpleAgent : MonoBehaviour {
             {
 
 
-
+                
                 // grab random spwan point in array.
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
-                
+                BeenHit = false;
                 agent.enabled = true;
                 rb.isKinematic = true;
                 
