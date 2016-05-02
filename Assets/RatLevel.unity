@@ -6964,6 +6964,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1371875373}
+  - {fileID: 484850497}
+  - {fileID: 290284955}
   m_Father: {fileID: 0}
   m_RootOrder: 22
 --- !u!1001 &365131846
@@ -52296,6 +52298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugText1: {fileID: 1371875374}
+  DebugText2: {fileID: 484850498}
+  DebugText3: {fileID: 290284956}
 --- !u!1001 &1810251346
 Prefab:
   m_ObjectHideFlags: 0

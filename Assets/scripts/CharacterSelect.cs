@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelect : MonoBehaviour {
 
@@ -10,6 +11,18 @@ public class CharacterSelect : MonoBehaviour {
 void Update()
     {
         
+    }
+
+    public void levelselect(int l)
+    {
+        if (l == 1)
+        {
+            SceneManager.LoadScene("ToadLevel");
+        }
+        else if (l == 2)
+        {
+            SceneManager.LoadScene("RatLevel");
+        }
     }
 
 
