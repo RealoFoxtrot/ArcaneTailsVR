@@ -28045,7 +28045,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 39c99a299b775f24a96ba9c18a31a703, type: 2}
     - target: {fileID: 100000, guid: 110857df4644a54408eaa41a835a8a9f, type: 3}
       propertyPath: m_TagString
-      value: Rat
+      value: PlayerModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 110857df4644a54408eaa41a835a8a9f, type: 3}
