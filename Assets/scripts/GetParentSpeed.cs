@@ -5,26 +5,35 @@ public class GetParentSpeed : MonoBehaviour {
 
 
     Animator RatAnim;
-    float ParentSpeed;
-    GameObject Parent;
-    Vector3 lastPosition = Vector3.zero;
+    //float ParentSpeed;
+    //GameObject Parent;
+    //Vector3 lastPosition = Vector3.zero;
 
     void Start ()
     {
         RatAnim = GetComponent<Animator>();
         
         //Make a note, Chance this based on our player Prefs system
-        Parent = GameObject.FindGameObjectWithTag("Player");
+       // Parent = GameObject.FindGameObjectWithTag("Player");
     }
 
     void FixedUpdate ()
     {
 
         //Make a note, Chance this based on our player Prefs system
-        ParentSpeed = (Parent.transform.position - lastPosition).magnitude;
-        RatAnim.SetFloat("ParentSpeed", ParentSpeed);
-        lastPosition = Parent.transform.position;
+        //ParentSpeed = (Parent.transform.position - lastPosition).magnitude;
+        //RatAnim.SetFloat("ParentSpeed", ParentSpeed);
+       // lastPosition = Parent.transform.position;
 
+
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        {
+            RatAnim.SetBool("Moving", false);
+        }
+        else
+        {
+            RatAnim.SetBool("Moving", true);
+        }
     }
 
 

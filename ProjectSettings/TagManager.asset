@@ -9,7 +9,7 @@ TagManager:
   - FloorRay
   - Spawn
   - Level
-  - Rat
+  - PlayerModel
   layers:
   - Default
   - TransparentFX

@@ -72,7 +72,7 @@ public class PinballMovement : MonoBehaviour
         //work around for layer based colliders clashing with raycasting.
         // Physics.IgnoreLayerCollision(0, 9);
 
-        playerAnim = GameObject.FindGameObjectWithTag("Rat").GetComponent<Animator>();
+        playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
 
     }
 
@@ -106,9 +106,9 @@ public class PinballMovement : MonoBehaviour
         
         boomMultiplier = boomForce * 500;
 
-        animationSpeed = (transform.position - lastPosition).magnitude;
-        lastPosition = transform.position;
-        playerAnim.SetFloat("ParentSpeed", animationSpeed);
+        //animationSpeed = (transform.position - lastPosition).magnitude;
+        //lastPosition = transform.position;
+        //playerAnim.SetFloat("ParentSpeed", animationSpeed);
 
         // swap between stunned and physics pinball
         if (beenhit == true)
@@ -226,6 +226,15 @@ public class PinballMovement : MonoBehaviour
             rb.AddForce(0, jumpHeight * 5000, 0);
         }
         
+        if (vertical == 0 && horizontal == 0)
+        {
+            playerAnim.SetBool("Moving", false);
+        }
+        else
+        {
+            playerAnim.SetBool("Moving", true);
+        }
+            
     }
 
 
