@@ -15,6 +15,11 @@ void Update()
 
     public void levelselect(int l)
     {
+
+        if (l == 0)
+        {
+            SceneManager.LoadScene("TrainingLevel");
+        }
         if (l == 1)
         {
             SceneManager.LoadScene("ToadLevel");
