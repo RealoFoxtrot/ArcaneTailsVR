@@ -32,6 +32,7 @@ public class PinballMovement : MonoBehaviour
     private bool jump;
     public bool CanJump;
     private bool landed;
+    public bool falling = false;
 
     //Respawn System
     public int lives = 3;
@@ -94,6 +95,12 @@ public class PinballMovement : MonoBehaviour
 
 
         }
+
+        if (transform.position.y < -0.1f)
+        {
+            falling = true;
+        }
+        
 
 
     }
@@ -158,6 +165,7 @@ public class PinballMovement : MonoBehaviour
                 { transform.position = spawn4.transform.position;
                     rb.velocity = new Vector3(0, 0, 0);
                 }
+                falling = false;
                 StartCoroutine(Respawn());
 
             }
@@ -214,19 +222,30 @@ public class PinballMovement : MonoBehaviour
         
         if (horizontal > 0)
         {
-
+            rb.drag = 0.1f;
             rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
         }
 
         if (horizontal < 0)
         {
-
+            rb.drag = 0.1f;
             rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
+        }
+
+       
+
+        if (horizontal == 0 && vertical == 0 && landed)
+        {
+            rb.drag = 5.0f;
+        }
+        else
+        {
+            rb.drag = 0.1f;
         }
 
         if (vertical != 0)
         {
-
+            rb.drag = 0.1f;
             rb.AddRelativeForce(0, 0, vertical * speed * rb.mass * 500 * Time.deltaTime);
         }
 

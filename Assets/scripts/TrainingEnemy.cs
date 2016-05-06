@@ -19,7 +19,7 @@ public class TrainingEnemy : MonoBehaviour {
         if (transform.position.y <= -5)
         {
             Vector3 spanwPos = spawnPositions[Random.Range(0, spawnPositions.Length)].transform.position;
-            transform.position = new Vector3(spanwPos.x, spanwPos.y - 0.4f, spanwPos.z);
+            transform.position = new Vector3(spanwPos.x, spanwPos.y - 0.2f, spanwPos.z);
             rb.velocity = new Vector3(0, 0, 0);
 
         }
