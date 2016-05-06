@@ -6,6 +6,7 @@ public class PushBackForce : MonoBehaviour {
     private Vector3 boomPosition;
     private float boomMultiplier;
     public float boomRadius;
+    public float boomForce = 20000;
 
     public GameObject AttackParticleFlash;
 
@@ -34,17 +35,17 @@ public class PushBackForce : MonoBehaviour {
         explosionPos = transform.position;
 
         // player pushback
-        if (Input.GetButtonDown("Fire"))
+        if (Input.GetButton("Fire"))
         {
 
-            StartCoroutine("AttackParticle");
+            
             foreach (Collider hit in Physics.OverlapSphere(transform.position, boomRadius))
             {
 
 
                 if (hit.attachedRigidbody != null && hit.gameObject.tag == "TestAttacker")
                 {
-                    hit.attachedRigidbody.AddExplosionForce(2000, explosionPos, boomRadius, 0.1f);
+                    hit.attachedRigidbody.AddExplosionForce(boomForce, explosionPos, boomRadius, 0.1f);
                 }
 
                     if (hit.attachedRigidbody != null && hit.gameObject.tag == "Attacker")
@@ -62,14 +63,16 @@ public class PushBackForce : MonoBehaviour {
                    // hit.attachedRigidbody.isKinematic = false;
                    // hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
 
-                    hit.attachedRigidbody.AddExplosionForce(2000, explosionPos, boomRadius, 0.1f);
+                    hit.attachedRigidbody.AddExplosionForce(boomForce, explosionPos, boomRadius, 0.1f);
 
                 }
 
-                StartCoroutine("AttackParticle");
-
             }
 
+        }
+        if (Input.GetButtonDown("Fire"))
+        {
+            StartCoroutine("AttackParticle");
         }
 
 

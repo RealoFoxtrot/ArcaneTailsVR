@@ -42,7 +42,7 @@ public class LevelLoad : MonoBehaviour {
         }
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == -1 && enemy2Lives == -1 && enemy3Lives == -1)//&& looseTimer == 0.0f)
+        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0)//&& looseTimer == 0.0f)
         {
             //StartCoroutine(winTime());
             timer += 1.0f;
