@@ -67,7 +67,7 @@ public class PinballMovement : MonoBehaviour
 
         // TODO: add diffrent types of player movement to test out.
         CanJump = false;
-         colliders = Physics.OverlapSphere(explosionPos, 6);
+        colliders = Physics.OverlapSphere(explosionPos, 6);
         Physics.IgnoreCollision(GetComponent<CapsuleCollider>(), GameObject.Find("Floor").GetComponent<MeshCollider>());
 
         //work around for layer based colliders clashing with raycasting.
@@ -143,13 +143,21 @@ public class PinballMovement : MonoBehaviour
                 //lives -= 1;
                 randoSpawn = Random.Range(1, 4);
                 if (randoSpawn == 1)
-                { transform.position = spawn1.transform.position; }
+                { transform.position = spawn1.transform.position;
+                    rb.velocity = new Vector3(0, 0, 0);
+                }
                 else if (randoSpawn == 2)
-                { transform.position = spawn2.transform.position; }
+                { transform.position = spawn2.transform.position;
+                    rb.velocity = new Vector3(0, 0, 0);
+                }
                 else if (randoSpawn == 3)
-                { transform.position = spawn3.transform.position; }
+                { transform.position = spawn3.transform.position;
+                    rb.velocity = new Vector3(0, 0, 0);
+                }
                 else if (randoSpawn == 4)
-                { transform.position = spawn4.transform.position; }
+                { transform.position = spawn4.transform.position;
+                    rb.velocity = new Vector3(0, 0, 0);
+                }
                 StartCoroutine(Respawn());
 
             }
