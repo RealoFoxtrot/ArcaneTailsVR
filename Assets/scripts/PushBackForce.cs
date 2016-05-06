@@ -38,8 +38,12 @@ public class PushBackForce : MonoBehaviour {
             foreach (Collider hit in Physics.OverlapSphere(transform.position, boomRadius))
             {
 
+                if (hit.attachedRigidbody != null && hit.gameObject.tag == "TestAttacker")
+                {
+                    hit.attachedRigidbody.AddExplosionForce(2000, explosionPos, boomRadius, 0.1f);
+                }
 
-                if (hit.attachedRigidbody != null && hit.gameObject.tag == "Attacker")
+                    if (hit.attachedRigidbody != null && hit.gameObject.tag == "Attacker")
                 {
 
                     agent = hit.gameObject.GetComponent<NavMeshAgent>();
