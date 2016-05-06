@@ -14,6 +14,7 @@ public class PushBackForce : MonoBehaviour {
     GameObject[] Enemies;
     NavMeshAgent agent;
 
+    Animator playerAnim;
 
     // Use this for initialization
     void Start() {
@@ -22,6 +23,7 @@ public class PushBackForce : MonoBehaviour {
 
         colliders = Physics.OverlapSphere(explosionPos, boomRadius);
 
+        playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,12 +34,12 @@ public class PushBackForce : MonoBehaviour {
         explosionPos = transform.position;
 
         // player pushback
-        if (Input.GetButton("Fire"))
+        if (Input.GetButtonDown("Fire"))
         {
-            //StartCoroutine("AttackParticle");
+
+            StartCoroutine("AttackParticle");
             foreach (Collider hit in Physics.OverlapSphere(transform.position, boomRadius))
             {
-
 
                 if (hit.attachedRigidbody != null && hit.gameObject.tag == "Attacker")
                 {
@@ -53,16 +55,12 @@ public class PushBackForce : MonoBehaviour {
                    // hit.attachedRigidbody.isKinematic = false;
                    // hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
 
-
-
-
-
                     hit.attachedRigidbody.AddExplosionForce(2000, explosionPos, boomRadius, 0.1f);
 
-
-
-
                 }
+
+                StartCoroutine("AttackParticle");
+
             }
 
         }
@@ -74,6 +72,7 @@ public class PushBackForce : MonoBehaviour {
     IEnumerator AttackParticle()
     {
         yield return new WaitForEndOfFrame();
+        playerAnim.SetTrigger("Attack");
         AttackParticleFlash.transform.position = transform.position;
         AttackParticleFlash.SetActive(true);
         yield return new WaitForSeconds(0.4f);
