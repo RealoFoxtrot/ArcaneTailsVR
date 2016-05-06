@@ -1,0 +1,98 @@
+fileFormatVersion: 2
+guid: 628bda4c4ecb02847ae76037229f5d63
+timeCreated: 1462400976
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Obelisk_L:Obelisk_Left
+    100002: Obelisk_M:Obelisk_Middle
+    100004: Obelisk_R:Obelisk_Right
+    100006: //RootNode
+    100008: Rocks_1:Mesh
+    100010: Rocks_2:Mesh
+    400000: Obelisk_L:Obelisk_Left
+    400002: Obelisk_M:Obelisk_Middle
+    400004: Obelisk_R:Obelisk_Right
+    400006: //RootNode
+    400008: Rocks_1:Mesh
+    400010: Rocks_2:Mesh
+    2300000: Obelisk_L:Obelisk_Left
+    2300002: Obelisk_M:Obelisk_Middle
+    2300004: Obelisk_R:Obelisk_Right
+    2300006: Rocks_1:Mesh
+    2300008: Rocks_2:Mesh
+    3300000: Obelisk_L:Obelisk_Left
+    3300002: Obelisk_M:Obelisk_Middle
+    3300004: Obelisk_R:Obelisk_Right
+    3300006: Rocks_1:Mesh
+    3300008: Rocks_2:Mesh
+    4300000: Obelisk_L:Obelisk_Left
+    4300002: Obelisk_M:Obelisk_Middle
+    4300004: Obelisk_R:Obelisk_Right
+    4300006: Rocks_1:Mesh
+    4300008: Rocks_2:Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

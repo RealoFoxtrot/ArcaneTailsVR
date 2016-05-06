@@ -11,3 +11,9 @@ EditorBuildSettings:
     path: Assets/Level Layout Test.unity
   - enabled: 1
     path: Assets/Kitten-Test.unity
+  - enabled: 1
+    path: Assets/RatLevel.unity
+  - enabled: 1
+    path: Assets/ToadLevel.unity
+  - enabled: 1
+    path: Assets/TrainingLevel.unity

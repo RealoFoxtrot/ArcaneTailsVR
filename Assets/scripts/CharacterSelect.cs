@@ -28,6 +28,10 @@ void Update()
         {
             SceneManager.LoadScene("RatLevel");
         }
+        else if (l == 3)
+        {
+            SceneManager.LoadScene("Kitten-Test");
+        }
     }
 
 

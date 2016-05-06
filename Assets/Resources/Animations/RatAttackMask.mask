@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: RatAttackMask
+  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_L
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_L/Witch_Doctor:Knee_L
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_L/Witch_Doctor:Knee_L/Witch_Doctor:Heel_L
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_L/Witch_Doctor:Knee_L/Witch_Doctor:Heel_L/Witch_Doctor:Foot_L
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_L/Witch_Doctor:Knee_L/Witch_Doctor:Heel_L/Witch_Doctor:Foot_L/Witch_Doctor:Toe_L
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_R
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_R/Witch_Doctor:Knee_R
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_R/Witch_Doctor:Knee_R/Witch_Doctor:Heel_R
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_R/Witch_Doctor:Knee_R/Witch_Doctor:Heel_R/Witch_Doctor:Foot_R
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Hip_R/Witch_Doctor:Knee_R/Witch_Doctor:Heel_R/Witch_Doctor:Foot_R/Witch_Doctor:Toe_R
+    m_Weight: 0
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_L/Witch_Doctor:Ear_1_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_L/Witch_Doctor:Ear_1_L/Witch_Doctor:Ear_Tip_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_R/Witch_Doctor:Ear_1_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Ear_Base_R/Witch_Doctor:Ear_1_R/Witch_Doctor:Ear_Tip_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Eye_L 1
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Eye_R 1
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Hat_Mount
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Muzzle_1
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Head_Base/Witch_Doctor:Head
+      1/Witch_Doctor:Muzzle_1/Witch_Doctor:Muzzle_2
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:OverCoat_1_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:OverCoat_1_L/Witch_Doctor:Overcoat_2_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:OverCoat_1_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:OverCoat_1_R/Witch_Doctor:Overcoat_2_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Index_Knuckle_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Index_Knuckle_L/Witch_Doctor:Index_Middle_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Index_Knuckle_L/Witch_Doctor:Index_Middle_L/Witch_Doctor:Index_Tip_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Middle_Knuckle_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Middle_Knuckle_L/Witch_Doctor:Middle_Elbow_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Middle_Knuckle_L/Witch_Doctor:Middle_Elbow_L/Witch_Doctor:Middle_Tip_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Pinky_Knuckle_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Pinky_Knuckle_L/Witch_Doctor:Pinky_Elbow_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Pinky_Knuckle_L/Witch_Doctor:Pinky_Elbow_L/Witch_Doctor:Pinky_Tip_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Thumb_Knuckle_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Thumb_Knuckle_L/Witch_Doctor:Thumb_Elbow_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Thumb_Knuckle_L/Witch_Doctor:Thumb_Elbow_L/Witch_Doctor:Thumb_Tip_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_L/Witch_Doctor:Elbow_L/Witch_Doctor:Forearm_L/Witch_Doctor:Wrist_L/Witch_Doctor:Weapon_Mount_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Index_Knuckle_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Index_Knuckle_R/Witch_Doctor:Index_Middle_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Index_Knuckle_R/Witch_Doctor:Index_Middle_R/Witch_Doctor:Index_Tip_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Middle_Knuckle_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Middle_Knuckle_R/Witch_Doctor:Middle_Elbow_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Middle_Knuckle_R/Witch_Doctor:Middle_Elbow_R/Witch_Doctor:Middle_Tip_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Pinky_Knuckle_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Pinky_Knuckle_R/Witch_Doctor:Pinky_Elbow_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Pinky_Knuckle_R/Witch_Doctor:Pinky_Elbow_R/Witch_Doctor:Pinky_Tip_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Thumb_Knuckle_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Thumb_Knuckle_R/Witch_Doctor:Thumb_Elbow_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Spine/Witch_Doctor:Neck/Witch_Doctor:Shoulder_R/Witch_Doctor:Elbow_R/Witch_Doctor:Forearm_R/Witch_Doctor:Wrist_R/Witch_Doctor:Thumb_Knuckle_R/Witch_Doctor:Thumb_Elbow_R/Witch_Doctor:Thumb_Tip_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base/Witch_Doctor:Tail_1
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base/Witch_Doctor:Tail_1/Witch_Doctor:Tail_2
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base/Witch_Doctor:Tail_1/Witch_Doctor:Tail_2/Witch_Doctor:Tail_3
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base/Witch_Doctor:Tail_1/Witch_Doctor:Tail_2/Witch_Doctor:Tail_3/Witch_Doctor:Tail_4
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Export_Skeleton/Witch_Doctor:Root/Witch_Doctor:Tail_Base/Witch_Doctor:Tail_1/Witch_Doctor:Tail_2/Witch_Doctor:Tail_3/Witch_Doctor:Tail_4/Witch_Doctor:Tail_Tip
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Body
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Body/Witch_Doctor:Chain_Plane
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Body/Witch_Doctor:Overcoat
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Cane
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Earings
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_L/Witch_Doctor:Eyelid_B_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_L/Witch_Doctor:Eyelid_U_L
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_R/Witch_Doctor:Eyelid_B_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Eye_R/Witch_Doctor:Eyelid_U_R
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Hat
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Head/Witch_Doctor:Hat/Witch_Doctor:Feathers
+    m_Weight: 1
+  - m_Path: Witch_Doctor:Witch_Doctor_Mesh/Witch_Doctor:Pants
+    m_Weight: 1

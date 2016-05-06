@@ -10,6 +10,7 @@ TagManager:
   - Spawn
   - Level
   - PlayerModel
+  - Barriers
   layers:
   - Default
   - TransparentFX

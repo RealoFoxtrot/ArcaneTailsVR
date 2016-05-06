@@ -31,6 +31,7 @@ public class PinballMovement : MonoBehaviour
     //Jump Control
     private bool jump;
     public bool CanJump;
+    private bool landed;
 
     //Respawn System
     public int lives = 3;
@@ -224,6 +225,7 @@ public class PinballMovement : MonoBehaviour
         if (CanJump && Input.GetButton("Jump"))
         {
             rb.AddForce(0, jumpHeight * 5000, 0);
+            playerAnim.SetTrigger("Jump");
         }
         
         if (vertical == 0 && horizontal == 0)
@@ -245,7 +247,11 @@ public class PinballMovement : MonoBehaviour
         {
 
             CanJump = true;
-
+            if (landed == false)
+            {
+                playerAnim.SetTrigger("Land");
+                landed = true;
+            }
         }
         
 
@@ -258,7 +264,7 @@ public class PinballMovement : MonoBehaviour
         {
 
             CanJump = false;
-
+            landed = false;
         }
 
 
