@@ -12,6 +12,7 @@ public class UICountDown : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       
         int countDown = (int)Agent.waitTimer;
         Text.text = countDown.ToString();
 

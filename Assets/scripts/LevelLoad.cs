@@ -42,7 +42,7 @@ public class LevelLoad : MonoBehaviour {
         } 
 
         //If the player has no lives, and the enemies are still alive, start the loose countdown
-        if (playerLives <= 0)//&& winTimer == 0.0f)
+        if (playerLives <= 0)
         {
             //StartCoroutine(looseTime());
             timer += 1.0f * Time.deltaTime;
@@ -50,7 +50,7 @@ public class LevelLoad : MonoBehaviour {
         }
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0 && sceneName == "Kitten-Test")//&& looseTimer == 0.0f)
+        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0 && sceneName == "Kitten-Test")
         {
             //StartCoroutine(winTime());
             timer += 1.0f * Time.deltaTime;

@@ -57,14 +57,6 @@ public class PushBackForce : MonoBehaviour {
                     agent = hit.gameObject.GetComponent<NavMeshAgent>();
                     hit.gameObject.GetComponent<SimpleAgent>().BeenHit = true;
 
-
-                    //agent.updatePosition = false;
-                    //agent.updateRotation = false;
-                    
-                    //agent.enabled = false;
-                   // hit.attachedRigidbody.isKinematic = false;
-                   // hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
-
                     hit.attachedRigidbody.AddExplosionForce(boomForce, explosionPos, boomRadius, 0.1f);
 
                 }
@@ -83,6 +75,8 @@ public class PushBackForce : MonoBehaviour {
 
     IEnumerator AttackParticle()
     {
+        // Tread the road cross the abyss
+        // Take a look down at the madness
         yield return new WaitForEndOfFrame();
         playerAnim.SetTrigger("Attack");
         AttackParticleFlash.transform.position = transform.position;
