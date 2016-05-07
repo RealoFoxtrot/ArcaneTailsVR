@@ -6443,12 +6443,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 277432685}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5212e409ee385d1419329e4fbf7da3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameEndTime: 5
+  sceneName: 
 --- !u!4 &277432687
 Transform:
   m_ObjectHideFlags: 0
@@ -24995,6 +24996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d564248d61005e345a4381dc9a925112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHit: 0
 --- !u!1 &800934298
 GameObject:
   m_ObjectHideFlags: 0

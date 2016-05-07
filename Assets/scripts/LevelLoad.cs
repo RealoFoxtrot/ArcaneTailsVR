@@ -18,34 +18,43 @@ public class LevelLoad : MonoBehaviour {
     private float timer;
     private float looseTimer;
     public float gameEndTime = 5.0f; //Can Change this number in the editor if it needs to be changed
+    public string sceneName;
+    // Use this for initialization
+    void Start () {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+        string sceneName = SceneManager.GetActiveScene().name;
+    }
+    
 
     // Update is called once per frame
     void Update() {
 
+        string sceneName = SceneManager.GetActiveScene().name;
+        
         //Check how many lives there are
         playerLives = GameObject.Find("Player").GetComponent<PinballMovement>().lives;
-        enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
-        enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
-        enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
+
+        if (sceneName == "Kitten-Test")
+        {
+            enemy1Lives = GameObject.Find("Enemy1").GetComponent<SimpleAgent>().lives;
+            enemy2Lives = GameObject.Find("Enemy2").GetComponent<SimpleAgent>().lives;
+            enemy3Lives = GameObject.Find("Enemy3").GetComponent<SimpleAgent>().lives;
+        } 
 
         //If the player has no lives, and the enemies are still alive, start the loose countdown
         if (playerLives <= 0)//&& winTimer == 0.0f)
         {
             //StartCoroutine(looseTime());
             timer += 1.0f * Time.deltaTime;
-            print("loosing");
+            print("loosing " + gameObject.name);
         }
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0)//&& looseTimer == 0.0f)
+        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0 && sceneName == "Kitten-Test")//&& looseTimer == 0.0f)
         {
             //StartCoroutine(winTime());
-            timer += 1.0f;
+            timer += 1.0f * Time.deltaTime;
+            
             print("winning");
         }
 
@@ -72,12 +81,10 @@ public class LevelLoad : MonoBehaviour {
 
         }
 
-        IEnumerator looseTime()
-        {
-        print("looser");
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("MainMenu");
-        }
+        
+
+
+    
 
 
     void LoadMainMenu()
