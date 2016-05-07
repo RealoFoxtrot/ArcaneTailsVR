@@ -6,7 +6,7 @@ public class PushBackForce : MonoBehaviour {
     private Vector3 boomPosition;
     private float boomMultiplier;
     public float boomRadius;
-    public float boomForce = 20000;
+    public float boomForce = 2000;
 
     public GameObject AttackParticleFlash;
 
