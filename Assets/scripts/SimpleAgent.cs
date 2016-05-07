@@ -22,7 +22,7 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject BoomPos;
     float timer = 0;
     float RespawnTimer = 0;
-    float waitTimer = 0;
+    public float waitTimer = 0;
     float hitTimer = 0;
     public float DisToEn;
     public GameObject enemy;
@@ -45,7 +45,7 @@ public class SimpleAgent : MonoBehaviour {
 	void Start () {
 
 
-        waitTimer = 5;
+        waitTimer = 10;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         rb = GetComponent<Rigidbody>();

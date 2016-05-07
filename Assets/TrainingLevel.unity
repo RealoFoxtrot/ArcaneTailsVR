@@ -32150,7 +32150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5407290, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: m_Drag
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11454402, guid: d925d973f932ed641b303e4edfd03610, type: 2}
       propertyPath: AttackParticleFlash
@@ -51428,7 +51428,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773727812}
-  m_Material: {fileID: 13400000, guid: 863bb8b1cf353cc4da0d8e762610569b, type: 2}
+  m_Material: {fileID: 13400000, guid: 64022ebfa8712a7419164be2209b354f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.6

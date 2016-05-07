@@ -6449,6 +6449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEndTime: 5
+  sceneName: 
 --- !u!4 &277432687
 Transform:
   m_ObjectHideFlags: 0
@@ -6964,8 +6965,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1371875373}
-  - {fileID: 484850497}
-  - {fileID: 290284955}
   m_Father: {fileID: 0}
   m_RootOrder: 22
 --- !u!1001 &365131846
@@ -32574,6 +32573,10 @@ Prefab:
       propertyPath: boomRadius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5407290, guid: d925d973f932ed641b303e4edfd03610, type: 2}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13544042, guid: d925d973f932ed641b303e4edfd03610, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d925d973f932ed641b303e4edfd03610, type: 2}
@@ -52298,8 +52301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugText1: {fileID: 1371875374}
-  DebugText2: {fileID: 484850498}
-  DebugText3: {fileID: 290284956}
+  DebugText2: {fileID: 0}
+  DebugText3: {fileID: 0}
 --- !u!1001 &1810251346
 Prefab:
   m_ObjectHideFlags: 0

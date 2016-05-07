@@ -252,7 +252,10 @@ public class PinballMovement : MonoBehaviour
         if (CanJump && Input.GetButton("Jump"))
         {
             rb.AddForce(0, jumpHeight * 5000, 0);
-            playerAnim.SetTrigger("Jump");
+            if (SceneManager.GetActiveScene().name == "Kitten-Test")
+            {
+                playerAnim.SetTrigger("Jump");
+            }
         }
         
         if (vertical == 0 && horizontal == 0)
