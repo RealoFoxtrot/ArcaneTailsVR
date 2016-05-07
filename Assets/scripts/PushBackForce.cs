@@ -45,6 +45,8 @@ public class PushBackForce : MonoBehaviour {
 
                 if (hit.attachedRigidbody != null && hit.gameObject.tag == "TestAttacker")
                 {
+                    hit.GetComponent<TrainingEnemy>().isHit = true;
+                    hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
                     hit.attachedRigidbody.AddExplosionForce(boomForce, explosionPos, boomRadius, 0.1f);
                 }
 
