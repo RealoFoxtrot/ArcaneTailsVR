@@ -54,7 +54,7 @@ public class SimpleAgent : MonoBehaviour {
             Physics.IgnoreCollision(Floor.GetComponent<Collider>(), GetComponent<Collider>());
         }
 
-
+        
        
         if(!enemy)
         {
@@ -194,8 +194,7 @@ public class SimpleAgent : MonoBehaviour {
                 lives -= 1;
             }
 
-            // Loaded down with your talents
-            // Can you still keep your balance
+           
             if (lives > 0)
             {
                 int SpawnPoint = Random.Range(0, spawns.Length);
@@ -205,6 +204,7 @@ public class SimpleAgent : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 for (int i = 0; i < EnemyArrayTracker.EnemyList.Count; i++) // for loop here for deciding if there is an enemy too close to spawn point.
                 {
+                    //Don't edit this, I'll never remember what it does.
                     if (Vector3.Distance(spawns[SpawnPoint].transform.position, EnemyArrayTracker.EnemyList[i].transform.position) < 3
                         && EnemyArrayTracker.EnemyList[i].name != name)
                     {

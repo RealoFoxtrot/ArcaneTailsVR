@@ -13,6 +13,13 @@ void Update()
         
     }
 
+    public void QuitGame()
+    {
+
+        Application.Quit();
+
+    }
+
     public void levelselect(int l)
     {
 
