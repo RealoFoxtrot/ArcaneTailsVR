@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &10430612
 Transform:
   m_ObjectHideFlags: 0
@@ -7598,7 +7598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 442548, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.292
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 442548, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7720,6 +7720,10 @@ Prefab:
       propertyPath: AttackParticleFlash
       value: 
       objectReference: {fileID: 495707456}
+    - target: {fileID: 489864, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
   m_IsPrefabParent: 0
@@ -17150,6 +17154,10 @@ Prefab:
       propertyPath: AttackParticleFlash
       value: 
       objectReference: {fileID: 1311522024}
+    - target: {fileID: 489864, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
   m_IsPrefabParent: 0
@@ -27467,7 +27475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &750553228
 Transform:
   m_ObjectHideFlags: 0
@@ -36787,6 +36795,10 @@ Prefab:
       propertyPath: AttackParticleFlash
       value: 
       objectReference: {fileID: 802748520}
+    - target: {fileID: 489864, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a20b3c635cbaf40ac002f16029d5d1, type: 2}
   m_IsPrefabParent: 0
