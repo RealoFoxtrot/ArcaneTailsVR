@@ -41,6 +41,8 @@ public class PinballMovement : MonoBehaviour
     private GameObject spawn3;
     private GameObject spawn4;
     private int randoSpawn;
+    private AudioSource RespawnSound;
+    public AudioClip RSClip;
 
     //Animators
     Animator playerAnim;
@@ -75,6 +77,8 @@ public class PinballMovement : MonoBehaviour
         // Physics.IgnoreLayerCollision(0, 9);
 
         playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
+
+        RespawnSound = GetComponent<AudioSource>();
 
     }
 
@@ -185,6 +189,7 @@ public class PinballMovement : MonoBehaviour
     IEnumerator Respawn()
     {
         yield return new WaitForEndOfFrame();
+        RespawnSound.PlayOneShot(RSClip, 1.0f);
         respawnParticle.transform.position = transform.position;
         respawnParticle.transform.Translate(Vector3.up * -0.1f);
         respawnParticle.SetActive(true);

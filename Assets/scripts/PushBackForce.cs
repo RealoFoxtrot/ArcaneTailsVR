@@ -9,6 +9,8 @@ public class PushBackForce : MonoBehaviour {
     public float boomForce = 2000;
 
     public GameObject AttackParticleFlash;
+    private AudioSource AttackSound;
+    public AudioClip AttackClip;
 
     Vector3 explosionPos;
     Collider[] colliders;
@@ -25,6 +27,8 @@ public class PushBackForce : MonoBehaviour {
         colliders = Physics.OverlapSphere(explosionPos, boomRadius);
 
         playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
+
+        AttackSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -79,6 +83,7 @@ public class PushBackForce : MonoBehaviour {
         // Take a look down at the madness
         yield return new WaitForEndOfFrame();
         playerAnim.SetTrigger("Attack");
+        AttackSound.PlayOneShot(AttackClip, 0.5F);
         AttackParticleFlash.transform.position = transform.position;
         AttackParticleFlash.SetActive(true);
         yield return new WaitForSeconds(0.4f);
