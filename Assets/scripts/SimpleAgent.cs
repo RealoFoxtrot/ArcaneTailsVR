@@ -11,10 +11,11 @@ public class SimpleAgent : MonoBehaviour {
     GameObject HitObject;
     public GameObject EnemyDebug;
     public GameObject respawnParticle;
+    public GameObject AttackParticleFlash;
 
 
 
-    private float boomForce = 200;
+    private float boomForce = 1000;
     private float DistanceToEnemy;
 
 
@@ -23,7 +24,7 @@ public class SimpleAgent : MonoBehaviour {
     float timer = 0;
     float RespawnTimer = 0;
     public float waitTimer = 0;
-    float hitTimer = 0;
+    public float hitTimer = 0;
     public float DisToEn;
     public GameObject enemy;
     public bool BeenHit = false;
@@ -151,7 +152,7 @@ public class SimpleAgent : MonoBehaviour {
 
        
         // Timer countdown to the AI hitting the player.
-        hitTimer += 1 * Time.deltaTime + Random.Range(0.0f,0.5f);
+        hitTimer += 1 * Time.deltaTime + Random.Range(0.0f,0.2f);
         if (hitTimer > 5 && !BeenHit) // every 5 seconds
         {
             HitPlayer();
@@ -174,7 +175,7 @@ public class SimpleAgent : MonoBehaviour {
             
            
 
-            if (timer > 4 && agent.transform.position.y > 0)
+            if (timer > 4 && agent.transform.position.y > 0 && agent.transform.position.y < 0.5f)
             {
                 BeenHit = false;
                 agent.enabled = true;
@@ -313,10 +314,11 @@ public class SimpleAgent : MonoBehaviour {
             if (hit.attachedRigidbody != null && hit.gameObject.tag == "Player") // if it is the player, then hit.
             {
                 print("Hitting Player");
+                StartCoroutine(AttackParticle());
                 HitObject = hit.gameObject;
 
                 HitObject.GetComponent<PinballMovement>().beenhit = true;
-                //hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
+                
                 hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
 
             }
@@ -327,6 +329,7 @@ public class SimpleAgent : MonoBehaviour {
 
                 if (hit.gameObject.tag == "Attacker" && hit.attachedRigidbody != null && hit.gameObject.name != name)
                 {
+                    StartCoroutine(AttackParticle());
                     HitObject.GetComponent<SimpleAgent>().BeenHit = true;
                     hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
                     hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
@@ -343,5 +346,19 @@ public class SimpleAgent : MonoBehaviour {
     }
 
 
-    
+    IEnumerator AttackParticle()
+    {
+        // Tread the road cross the abyss
+        // Take a look down at the madness
+        yield return new WaitForEndOfFrame();
+        
+        
+        AttackParticleFlash.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - 0.2f);
+        AttackParticleFlash.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        AttackParticleFlash.SetActive(false);
+    }
+
+
+
 }
