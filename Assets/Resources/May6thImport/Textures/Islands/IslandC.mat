@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: IslandC
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP
+  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 617aa988cb5b0154d84f6f2f1a3b7d91, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 2d8ce4cc72fd90a42972a86289834d96, type: 3}
+          m_Texture: {fileID: 2800000, guid: e4f04be2e85fe484c9d8ff1009512de1, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -47,7 +47,7 @@ Material:
         first:
           name: _OcclusionMap
         second:
-          m_Texture: {fileID: 2800000, guid: eeb6bb1df12690d49970f04d80140125, type: 3}
+          m_Texture: {fileID: 2800000, guid: e609bd0e24005f74685c01359fc9d15c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -75,7 +75,7 @@ Material:
         first:
           name: _MetallicGlossMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: f3c72dc0b40a04a408720d368ccadb49, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
