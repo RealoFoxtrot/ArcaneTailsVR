@@ -1,14 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterSelect : MonoBehaviour {
 
     public GameObject FocusPoint;
     public GameObject MenuUp;
     public GameObject MenuDown;
+    public Toggle toggle;
+    public GameObject Audio;
 
-void Update()
+
+    void start()
+    {
+        PlayerPrefs.SetInt("BackgroundMusic", 1);
+    }
+
+    void Update()
     {
         
     }
@@ -18,6 +27,27 @@ void Update()
 
         Application.Quit();
 
+    }
+
+    public void ChangeMusicBool(bool enabled)
+    {
+        enabled = toggle.isOn;
+        if (!enabled)
+        {
+            Audio.SetActive(false);
+            PlayerPrefs.SetInt("BackgroundMusic", 0);
+            print(PlayerPrefs.GetInt("BackgroundMusic"));
+        }
+        else {
+            Audio.SetActive(true);
+            PlayerPrefs.SetInt("BackgroundMusic", 1);
+            print(PlayerPrefs.GetInt("BackgroundMusic"));
+        }
+    }
+
+    public void EnableMusic()
+    {
+        PlayerPrefs.SetInt("BackgroundMusic", 1);
     }
 
     public void levelselect(int l)

@@ -19,10 +19,20 @@ public class LevelLoad : MonoBehaviour {
     private float looseTimer;
     public float gameEndTime = 5.0f; //Can Change this number in the editor if it needs to be changed
     public string sceneName;
+    public GameObject Audio;
     // Use this for initialization
     void Start () {
 
         string sceneName = SceneManager.GetActiveScene().name;
+        if (PlayerPrefs.GetInt("BackgroundMusic") == 0)
+        {
+            Audio.SetActive(false);
+
+        }
+        else
+        {
+            Audio.SetActive(true);
+        }
     }
     
 

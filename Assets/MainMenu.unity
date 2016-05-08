@@ -618,6 +618,8 @@ MonoBehaviour:
   FocusPoint: {fileID: 1343719881}
   MenuUp: {fileID: 1347441586}
   MenuDown: {fileID: 1979700168}
+  toggle: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &289168500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,6 +2041,8 @@ MonoBehaviour:
   FocusPoint: {fileID: 1343719881}
   MenuUp: {fileID: 1347441586}
   MenuDown: {fileID: 1979700168}
+  toggle: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!114 &899063835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2388,9 +2392,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146301551}
-        m_MethodName: set_pause
-        m_Mode: 0
+      - m_Target: {fileID: 1661168522}
+        m_MethodName: ChangeMusicBool
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2398,7 +2402,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -4051,6 +4055,8 @@ MonoBehaviour:
   FocusPoint: {fileID: 1343719881}
   MenuUp: {fileID: 1347441586}
   MenuDown: {fileID: 1979700168}
+  toggle: {fileID: 1015526157}
+  Audio: {fileID: 2062237490}
 --- !u!1 &1698859545
 GameObject:
   m_ObjectHideFlags: 0

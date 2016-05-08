@@ -1025,8 +1025,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.28
-  m_Text: "Move around   Attack the Orbs\n\nWhen you are ready, \nreturn to menu and
-    choose battle"
+  m_Text: "Move around and Attack the black Orbs\n\nWhen you are ready, \nreturn to
+    menu and choose battle"
 --- !u!222 &69517521
 CanvasRenderer:
   m_ObjectHideFlags: 0
