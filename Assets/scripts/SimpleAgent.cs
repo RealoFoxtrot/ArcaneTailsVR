@@ -85,6 +85,7 @@ public class SimpleAgent : MonoBehaviour {
         else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
         {
             //creating errors
+            enemyAnim.SetBool("Moving", true);
             agent.updatePosition = true;
             agent.enabled = true;
 
@@ -122,6 +123,7 @@ public class SimpleAgent : MonoBehaviour {
             {
                 print("There is a winner");
                 Target = Camera.main.gameObject.transform.position;
+                enemyAnim.SetBool("Moving", false);
                 agent.updateRotation = false;
                 agent.updatePosition = false;
                 agent.enabled = false;
@@ -138,6 +140,7 @@ public class SimpleAgent : MonoBehaviour {
 
         if (BeenHit)
         {
+            enemyAnim.SetBool("Moving", false);
             agent.enabled = false;
             rb.isKinematic = false;
             rb.constraints = RigidbodyConstraints.None;
@@ -356,6 +359,7 @@ public class SimpleAgent : MonoBehaviour {
         //Don't need this, as the particle will move to be where the pointer is anyhow
         //AttackParticleFlash.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - 0.2f);
         AttackParticleFlash.SetActive(true);
+        enemyAnim.SetTrigger("Attack");
         yield return new WaitForSeconds(0.5f);
         AttackParticleFlash.SetActive(false);
     }
