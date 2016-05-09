@@ -45,7 +45,7 @@ public class PinballMovement : MonoBehaviour
     public AudioClip RSClip;
 
     //Animators
-    Animator playerAnim;
+    public Animator playerAnim;
 
     //Colliders and explosion
     Vector3 explosionPos;
@@ -76,7 +76,7 @@ public class PinballMovement : MonoBehaviour
         //work around for layer based colliders clashing with raycasting.
         // Physics.IgnoreLayerCollision(0, 9);
 
-        playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
+        //playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
 
         RespawnSound = GetComponent<AudioSource>();
 

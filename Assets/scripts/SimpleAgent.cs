@@ -12,6 +12,7 @@ public class SimpleAgent : MonoBehaviour {
     public GameObject EnemyDebug;
     public GameObject respawnParticle;
     public GameObject AttackParticleFlash;
+    public Animator enemyAnim;
 
 
 
@@ -352,8 +353,8 @@ public class SimpleAgent : MonoBehaviour {
         // Take a look down at the madness
         yield return new WaitForEndOfFrame();
         
-        
-        AttackParticleFlash.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - 0.2f);
+        //Don't need this, as the particle will move to be where the pointer is anyhow
+        //AttackParticleFlash.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - 0.2f);
         AttackParticleFlash.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         AttackParticleFlash.SetActive(false);
