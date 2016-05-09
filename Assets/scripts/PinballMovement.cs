@@ -224,33 +224,16 @@ public class PinballMovement : MonoBehaviour
     void physicsPinballControl()
     {
         parentturning();
-        
-        if (horizontal > 0)
-        {
-            //rb.drag = 0.1f;
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
-        }
 
-        if (horizontal < 0)
+        if (horizontal != 0 && rb.velocity.x < 4)
         {
-            //rb.drag = 0.1f;
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
+            
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, 0);
         }
-
        
-
-        if (horizontal == 0 && vertical == 0 && landed)
+        if (vertical != 0 && rb.velocity.z < 4)
         {
-            //rb.drag = 5.0f;
-        }
-        else
-        {
-            //rb.drag = 0.1f;
-        }
-
-        if (vertical != 0)
-        {
-            //rb.drag = 0.1f;
+           
             rb.AddRelativeForce(0, 0, vertical * speed * rb.mass * 500 * Time.deltaTime);
         }
 
