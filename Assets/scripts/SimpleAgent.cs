@@ -84,8 +84,8 @@ public class SimpleAgent : MonoBehaviour {
         else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
         {
             //creating errors
-            
-            
+
+            enemyAnim.SetBool("Moving", true);
             agent.updatePosition = true;
             agent.enabled = true;
             //enemyAnim.SetBool("Moving", true);
