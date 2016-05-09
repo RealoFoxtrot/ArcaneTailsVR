@@ -17,7 +17,7 @@ public class PushBackForce : MonoBehaviour {
     GameObject[] Enemies;
     NavMeshAgent agent;
 
-    Animator playerAnim;
+    public Animator playerAnim;
 
     // Use this for initialization
     void Start() {
@@ -26,7 +26,7 @@ public class PushBackForce : MonoBehaviour {
 
         colliders = Physics.OverlapSphere(explosionPos, boomRadius);
 
-        playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
+        //playerAnim = GameObject.FindGameObjectWithTag("PlayerModel").GetComponent<Animator>();
 
         AttackSound = GetComponent<AudioSource>();
     }

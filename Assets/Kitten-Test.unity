@@ -35525,6 +35525,10 @@ Prefab:
       propertyPath: playerAnim
       value: 
       objectReference: {fileID: 1186253053}
+    - target: {fileID: 11454402, guid: d925d973f932ed641b303e4edfd03610, type: 2}
+      propertyPath: playerAnim
+      value: 
+      objectReference: {fileID: 1186253053}
     m_RemovedComponents:
     - {fileID: 13544042, guid: d925d973f932ed641b303e4edfd03610, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d925d973f932ed641b303e4edfd03610, type: 2}
@@ -50535,9 +50539,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359192769}
-  m_LocalRotation: {x: 0.3753235, y: 0, z: 0, w: 0.9268939}
-  m_LocalPosition: {x: -2.975, y: -0.22753906, z: 0.489}
-  m_LocalScale: {x: 0.85, y: 1, z: 1}
+  m_LocalRotation: {x: 0.38268346, y: 0, z: 0, w: 0.9238795}
+  m_LocalPosition: {x: -2.975, y: -0.076, z: 0.64}
+  m_LocalScale: {x: 0.6, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1309824028}
   m_Father: {fileID: 0}
@@ -56341,7 +56345,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 005088a58a3d8704c8f6a6f4d0516e21, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -57628,7 +57632,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 005088a58a3d8704c8f6a6f4d0516e21, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

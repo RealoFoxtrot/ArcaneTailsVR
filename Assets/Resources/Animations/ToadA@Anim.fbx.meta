@@ -406,7 +406,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackToad
       takeName: Take 001
-      firstFrame: 41
+      firstFrame: 52
       lastFrame: 71
       wrapMode: 0
       orientationOffsetY: 0
@@ -435,25 +435,25 @@ ModelImporter:
       - path: ToadA:Export_Skeleton/ToadA:Root
         weight: 1
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
-        weight: 1
+        weight: 0
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
         weight: 1
       - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
@@ -964,15 +964,15 @@ ModelImporter:
     - serializedVersion: 16
       name: JumpMid
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 163
+      firstFrame: 119
+      lastFrame: 148
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1146,11 +1146,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: JumpEnd
       takeName: Take 001
-      firstFrame: 1
+      firstFrame: 149
       lastFrame: 163
       wrapMode: 0
       orientationOffsetY: 0
@@ -1332,7 +1332,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

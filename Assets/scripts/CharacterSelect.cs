@@ -19,7 +19,14 @@ public class CharacterSelect : MonoBehaviour {
 
     void Update()
     {
-        
+        if (PlayerPrefs.GetInt("BackgroundMusic") == 1)
+        {
+            toggle.isOn = true;
+        }
+        else
+        {
+            toggle.isOn = false;
+        }
     }
 
     public void QuitGame()
@@ -43,6 +50,7 @@ public class CharacterSelect : MonoBehaviour {
             PlayerPrefs.SetInt("BackgroundMusic", 1);
             print(PlayerPrefs.GetInt("BackgroundMusic"));
         }
+
     }
 
     public void EnableMusic()

@@ -24,14 +24,15 @@ public class LevelLoad : MonoBehaviour {
     void Start () {
 
         string sceneName = SceneManager.GetActiveScene().name;
-        if (PlayerPrefs.GetInt("BackgroundMusic") == 0)
+        if (PlayerPrefs.GetInt("BackgroundMusic") == 1)
         {
-            Audio.SetActive(false);
-
+            Audio.SetActive(true);
+            print(PlayerPrefs.GetInt("BackgroundMusic"));
         }
         else
         {
-            Audio.SetActive(true);
+            Audio.SetActive(false);
+            print(PlayerPrefs.GetInt("BackgroundMusic"));
         }
     }
     
