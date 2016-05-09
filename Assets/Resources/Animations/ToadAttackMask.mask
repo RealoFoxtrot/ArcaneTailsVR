@@ -7,4 +7,154 @@ AvatarMask:
   m_PrefabInternal: {fileID: 0}
   m_Name: ToadAttackMask
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-  m_Elements: []
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Export_Skeleton
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Hip_L
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_L/Knee_L
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_L/Knee_L/Heel_L
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_L/Knee_L/Heel_L/Foot_L
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_L/Knee_L/Heel_L/Foot_L/Toe_L
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_R
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_R/Knee_R
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_R/Knee_R/Heel_R
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_R/Knee_R/Heel_R/Foot_R
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Hip_R/Knee_R/Heel_R/Foot_R/Toe_R
+    m_Weight: 0
+  - m_Path: Export_Skeleton/Root/Spine
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Backpack_L_joint
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Backpack_S_joint
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Head_Base
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Head_Base/Head 1
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Head_Base/Head 1/Eye_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Head_Base/Head 1/Lens_L_joint
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Head_Base/Head 1/Lens_S_joint
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Index_Knuckle_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Index_Knuckle_L/Index_Mid_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Index_Knuckle_L/Index_Mid_L/Index_Tip_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Middle_Knuckle_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Middle_Knuckle_L/Middle_Mid_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Middle_Knuckle_L/Middle_Mid_L/Middle_Tip_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Pinky_Knuckle_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Pinky_Knuckle_L/Pinky_Mid_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Pinky_Knuckle_L/Pinky_Mid_L/Pinky_Tip_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Thumb_Knuckle_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Thumb_Knuckle_L/Thumb_Mid_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_L/Elbow_L/Forearm_L/Wrist_L/Thumb_Knuckle_L/Thumb_Mid_L/Thumb_Tip_L
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Index_Knuckle_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Index_Knuckle_R/Index_Mid_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Index_Knuckle_R/Index_Mid_R/Index_Tip_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Middle_Knuckle_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Middle_Knuckle_R/Middle_Mid_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Middle_Knuckle_R/Middle_Mid_R/Middle_Tip_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Pinky_Knuckle_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Pinky_Knuckle_R/Pinky_Mid_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Pinky_Knuckle_R/Pinky_Mid_R/Pinky_Tip_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Thumb_Knuckle_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Thumb_Knuckle_R/Thumb_Mid_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Neck/Shoulder_R/Elbow_R/Forearm_R/Wrist_R/Thumb_Knuckle_R/Thumb_Mid_R/Thumb_Tip_R
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Vial_L_joint
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Vial_L_joint1
+    m_Weight: 1
+  - m_Path: Export_Skeleton/Root/Spine/Vial_Round_joint
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Backpack
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Backpack/Tank_L
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Backpack/Tank_S
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Backpack/Tank_Straps
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Boots
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head/Eye
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head/Eye/Eyelid_B
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head/Eye/Eyelid_T
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head/Lens_L
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Head/Lens_S
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Pipes
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Vials
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Vials/Round_Vial
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Vials/Vial_L
+    m_Weight: 1
+  - m_Path: Toad_Alchemist_Mesh/Body/Vials/Vial_S
+    m_Weight: 1
