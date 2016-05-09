@@ -1,0 +1,1379 @@
+fileFormatVersion: 2
+guid: ffe7b604c6ed50649a1d4ffbd35418cc
+timeCreated: 1462756356
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ToadA:Backpack
+    100002: ToadA:Backpack_L_joint
+    100004: ToadA:Backpack_S_joint
+    100006: ToadA:Body
+    100008: ToadA:Boots
+    100010: ToadA:Elbow_L
+    100012: ToadA:Elbow_R
+    100014: ToadA:Export_Skeleton
+    100016: ToadA:Eye
+    100018: ToadA:Eye_R
+    100020: ToadA:Eyelid_B
+    100022: ToadA:Eyelid_T
+    100024: ToadA:Foot_L
+    100026: ToadA:Foot_R
+    100028: ToadA:Forearm_L
+    100030: ToadA:Forearm_R
+    100032: ToadA:Head
+    100034: ToadA:Head 1
+    100036: ToadA:Head_Base
+    100038: ToadA:Heel_L
+    100040: ToadA:Heel_R
+    100042: ToadA:Hip_L
+    100044: ToadA:Hip_R
+    100046: ToadA:Index_Knuckle_L
+    100048: ToadA:Index_Knuckle_R
+    100050: ToadA:Index_Mid_L
+    100052: ToadA:Index_Mid_R
+    100054: ToadA:Index_Tip_L
+    100056: ToadA:Index_Tip_R
+    100058: ToadA:Knee_L
+    100060: ToadA:Knee_R
+    100062: ToadA:Lens_L
+    100064: ToadA:Lens_L_joint
+    100066: ToadA:Lens_S
+    100068: ToadA:Lens_S_joint
+    100070: ToadA:Middle_Knuckle_L
+    100072: ToadA:Middle_Knuckle_R
+    100074: ToadA:Middle_Mid_L
+    100076: ToadA:Middle_Mid_R
+    100078: ToadA:Middle_Tip_L
+    100080: ToadA:Middle_Tip_R
+    100082: ToadA:Neck
+    100084: ToadA:Pinky_Knuckle_L
+    100086: ToadA:Pinky_Knuckle_R
+    100088: ToadA:Pinky_Mid_L
+    100090: ToadA:Pinky_Mid_R
+    100092: ToadA:Pinky_Tip_L
+    100094: ToadA:Pinky_Tip_R
+    100096: ToadA:Pipes
+    100098: ToadA:Root
+    100100: ToadA:Round_Vial
+    100102: ToadA:Shoulder_L
+    100104: ToadA:Shoulder_R
+    100106: ToadA:Spine
+    100108: ToadA:Tank_L
+    100110: ToadA:Tank_S
+    100112: ToadA:Tank_Straps
+    100114: ToadA:Thumb_Knuckle_L
+    100116: ToadA:Thumb_Knuckle_R
+    100118: ToadA:Thumb_Mid_L
+    100120: ToadA:Thumb_Mid_R
+    100122: ToadA:Thumb_Tip_L
+    100124: ToadA:Thumb_Tip_R
+    100126: ToadA:Toad_Alchemist_Mesh
+    100128: ToadA:Toe_L
+    100130: ToadA:Toe_R
+    100132: ToadA:Vial_L
+    100134: ToadA:Vial_L_joint
+    100136: ToadA:Vial_L_joint1
+    100138: ToadA:Vial_Round_joint
+    100140: ToadA:Vial_S
+    100142: ToadA:Vials
+    100144: ToadA:Wrist_L
+    100146: ToadA:Wrist_R
+    100148: //RootNode
+    100150: ToadA_ctrl:Control_Rig
+    100152: ToadA_ctrl:Control_Skeleton
+    400000: ToadA:Backpack
+    400002: ToadA:Backpack_L_joint
+    400004: ToadA:Backpack_S_joint
+    400006: ToadA:Body
+    400008: ToadA:Boots
+    400010: ToadA:Elbow_L
+    400012: ToadA:Elbow_R
+    400014: ToadA:Export_Skeleton
+    400016: ToadA:Eye
+    400018: ToadA:Eye_R
+    400020: ToadA:Eyelid_B
+    400022: ToadA:Eyelid_T
+    400024: ToadA:Foot_L
+    400026: ToadA:Foot_R
+    400028: ToadA:Forearm_L
+    400030: ToadA:Forearm_R
+    400032: ToadA:Head
+    400034: ToadA:Head 1
+    400036: ToadA:Head_Base
+    400038: ToadA:Heel_L
+    400040: ToadA:Heel_R
+    400042: ToadA:Hip_L
+    400044: ToadA:Hip_R
+    400046: ToadA:Index_Knuckle_L
+    400048: ToadA:Index_Knuckle_R
+    400050: ToadA:Index_Mid_L
+    400052: ToadA:Index_Mid_R
+    400054: ToadA:Index_Tip_L
+    400056: ToadA:Index_Tip_R
+    400058: ToadA:Knee_L
+    400060: ToadA:Knee_R
+    400062: ToadA:Lens_L
+    400064: ToadA:Lens_L_joint
+    400066: ToadA:Lens_S
+    400068: ToadA:Lens_S_joint
+    400070: ToadA:Middle_Knuckle_L
+    400072: ToadA:Middle_Knuckle_R
+    400074: ToadA:Middle_Mid_L
+    400076: ToadA:Middle_Mid_R
+    400078: ToadA:Middle_Tip_L
+    400080: ToadA:Middle_Tip_R
+    400082: ToadA:Neck
+    400084: ToadA:Pinky_Knuckle_L
+    400086: ToadA:Pinky_Knuckle_R
+    400088: ToadA:Pinky_Mid_L
+    400090: ToadA:Pinky_Mid_R
+    400092: ToadA:Pinky_Tip_L
+    400094: ToadA:Pinky_Tip_R
+    400096: ToadA:Pipes
+    400098: ToadA:Root
+    400100: ToadA:Round_Vial
+    400102: ToadA:Shoulder_L
+    400104: ToadA:Shoulder_R
+    400106: ToadA:Spine
+    400108: ToadA:Tank_L
+    400110: ToadA:Tank_S
+    400112: ToadA:Tank_Straps
+    400114: ToadA:Thumb_Knuckle_L
+    400116: ToadA:Thumb_Knuckle_R
+    400118: ToadA:Thumb_Mid_L
+    400120: ToadA:Thumb_Mid_R
+    400122: ToadA:Thumb_Tip_L
+    400124: ToadA:Thumb_Tip_R
+    400126: ToadA:Toad_Alchemist_Mesh
+    400128: ToadA:Toe_L
+    400130: ToadA:Toe_R
+    400132: ToadA:Vial_L
+    400134: ToadA:Vial_L_joint
+    400136: ToadA:Vial_L_joint1
+    400138: ToadA:Vial_Round_joint
+    400140: ToadA:Vial_S
+    400142: ToadA:Vials
+    400144: ToadA:Wrist_L
+    400146: ToadA:Wrist_R
+    400148: //RootNode
+    400150: ToadA_ctrl:Control_Rig
+    400152: ToadA_ctrl:Control_Skeleton
+    4300000: ToadA:Body
+    4300002: ToadA:Boots
+    4300004: ToadA:Pipes
+    4300006: ToadA:Head
+    4300008: ToadA:Eye
+    4300010: ToadA:Eyelid_B
+    4300012: ToadA:Eyelid_T
+    4300014: ToadA:Lens_S
+    4300016: ToadA:Lens_L
+    4300018: ToadA:Tank_S
+    4300020: ToadA:Tank_L
+    4300022: ToadA:Tank_Straps
+    4300024: ToadA:Vial_S
+    4300026: ToadA:Vial_L
+    4300028: ToadA:Round_Vial
+    7400000: IdleToad
+    7400002: AttackToad
+    7400004: Run
+    7400006: JumpStart
+    7400008: JumpMid
+    7400010: JumpEnd
+    9500000: //RootNode
+    13700000: ToadA:Body
+    13700002: ToadA:Boots
+    13700004: ToadA:Eye
+    13700006: ToadA:Eyelid_B
+    13700008: ToadA:Eyelid_T
+    13700010: ToadA:Head
+    13700012: ToadA:Lens_L
+    13700014: ToadA:Lens_S
+    13700016: ToadA:Pipes
+    13700018: ToadA:Round_Vial
+    13700020: ToadA:Tank_L
+    13700022: ToadA:Tank_S
+    13700024: ToadA:Tank_Straps
+    13700026: ToadA:Vial_L
+    13700028: ToadA:Vial_S
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IdleToad
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: AttackToad
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 72
+      lastFrame: 102
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: JumpStart
+      takeName: Take 001
+      firstFrame: 103
+      lastFrame: 118
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: JumpMid
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 163
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpEnd
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 163
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ToadA:Export_Skeleton
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_L/ToadA:Knee_L/ToadA:Heel_L/ToadA:Foot_L/ToadA:Toe_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Hip_R/ToadA:Knee_R/ToadA:Heel_R/ToadA:Foot_R/ToadA:Toe_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Backpack_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Eye_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Head_Base/ToadA:Head
+          1/ToadA:Lens_S_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Index_Knuckle_L/ToadA:Index_Mid_L/ToadA:Index_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Middle_Knuckle_L/ToadA:Middle_Mid_L/ToadA:Middle_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Pinky_Knuckle_L/ToadA:Pinky_Mid_L/ToadA:Pinky_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_L/ToadA:Elbow_L/ToadA:Forearm_L/ToadA:Wrist_L/ToadA:Thumb_Knuckle_L/ToadA:Thumb_Mid_L/ToadA:Thumb_Tip_L
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Index_Knuckle_R/ToadA:Index_Mid_R/ToadA:Index_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Middle_Knuckle_R/ToadA:Middle_Mid_R/ToadA:Middle_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Pinky_Knuckle_R/ToadA:Pinky_Mid_R/ToadA:Pinky_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Neck/ToadA:Shoulder_R/ToadA:Elbow_R/ToadA:Forearm_R/ToadA:Wrist_R/ToadA:Thumb_Knuckle_R/ToadA:Thumb_Mid_R/ToadA:Thumb_Tip_R
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_L_joint1
+        weight: 1
+      - path: ToadA:Export_Skeleton/ToadA:Root/ToadA:Spine/ToadA:Vial_Round_joint
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Backpack/ToadA:Tank_Straps
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Boots
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_B
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Eye/ToadA:Eyelid_T
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Head/ToadA:Lens_S
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Pipes
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Round_Vial
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_L
+        weight: 1
+      - path: ToadA:Toad_Alchemist_Mesh/ToadA:Body/ToadA:Vials/ToadA:Vial_S
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig
+        weight: 1
+      - path: ToadA_ctrl:Control_Rig/ToadA_ctrl:Control_Skeleton
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 75d8d1d31dc34be428f80a3073a1def7,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
