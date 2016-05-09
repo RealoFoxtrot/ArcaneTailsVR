@@ -35,8 +35,7 @@ public class SimpleAgent : MonoBehaviour {
     public int lives;
     private int randoSpawn;
     //Enums
-    //enum EnemyState {Moving, Attacking, Attacked};
-    // Use this for initialization
+    
 
     void Awake() {
         DontDestroyOnLoad(enemy);
@@ -70,8 +69,8 @@ public class SimpleAgent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
 
-       
 
         if (waitTimer > 0)
         {
@@ -85,9 +84,11 @@ public class SimpleAgent : MonoBehaviour {
         else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
         {
             //creating errors
-            enemyAnim.SetBool("Moving", true);
+            
+            
             agent.updatePosition = true;
             agent.enabled = true;
+            //enemyAnim.SetBool("Moving", true);
 
         }
         
@@ -318,6 +319,7 @@ public class SimpleAgent : MonoBehaviour {
             if (hit.attachedRigidbody != null && hit.gameObject.tag == "Player") // if it is the player, then hit.
             {
                 print("Hitting Player");
+                
                 StartCoroutine(AttackParticle());
                 HitObject = hit.gameObject;
 
@@ -334,6 +336,7 @@ public class SimpleAgent : MonoBehaviour {
                 if (hit.gameObject.tag == "Attacker" && hit.attachedRigidbody != null && hit.gameObject.name != name)
                 {
                     StartCoroutine(AttackParticle());
+                    
                     HitObject.GetComponent<SimpleAgent>().BeenHit = true;
                     hit.attachedRigidbody.constraints = RigidbodyConstraints.None;
                     hit.attachedRigidbody.AddExplosionForce(boomForce * hit.attachedRigidbody.mass, BoomPos.transform.position, boomRadius, 0.1f);
@@ -356,10 +359,11 @@ public class SimpleAgent : MonoBehaviour {
         // Take a look down at the madness
         yield return new WaitForEndOfFrame();
         
+        enemyAnim.SetTrigger("Attack");
         //Don't need this, as the particle will move to be where the pointer is anyhow
         //AttackParticleFlash.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - 0.2f);
         AttackParticleFlash.SetActive(true);
-        enemyAnim.SetTrigger("Attack");
+        
         yield return new WaitForSeconds(0.5f);
         AttackParticleFlash.SetActive(false);
     }
