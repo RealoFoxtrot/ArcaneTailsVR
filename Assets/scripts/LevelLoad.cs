@@ -20,6 +20,7 @@ public class LevelLoad : MonoBehaviour {
     public float gameEndTime = 5.0f; //Can Change this number in the editor if it needs to be changed
     public string sceneName;
     public GameObject Audio;
+    public EnemyArrayTracker tracker;
     // Use this for initialization
     void Start () {
 
@@ -53,24 +54,19 @@ public class LevelLoad : MonoBehaviour {
         } 
 
         //If the player has no lives, and the enemies are still alive, start the loose countdown
-        if (playerLives <= 0)
-        {
-            //StartCoroutine(looseTime());
-            timer += 1.0f * Time.deltaTime;
-            print("loosing " + gameObject.name);
-        }
+       
 
         //If the enemies are all dead, and the player is still alive, start the win countdown
-        if (enemy1Lives == 0 && enemy2Lives == 0 && enemy3Lives == 0 && sceneName == "Kitten-Test")
+        if (sceneName != "TrainingLevel" && tracker.WinningTimer >= 5)
         {
             //StartCoroutine(winTime());
             timer += 1.0f * Time.deltaTime;
             
-            print("winning");
+            //print("Someone Won");
         }
 
 
-        if (timer >= 5)
+        if (timer >= 10)
         {
 
             timer = 0;

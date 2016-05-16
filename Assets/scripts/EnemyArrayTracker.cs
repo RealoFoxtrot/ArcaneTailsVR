@@ -12,11 +12,14 @@ public class EnemyArrayTracker : MonoBehaviour {
     public static Vector3 ClosestEnemy;
     public static bool IsWinner = false;
     bool PlayerWins = false;
+    public GameObject[] Explosions;
 
 
     // list so I can add player
     public static List<GameObject> EnemyList = new List<GameObject>();
-
+    public GameObject WinningPlayer;
+    public Transform CelebratePos;
+    public float WinningTimer = 0;
 
     void Awake()
     {
@@ -34,9 +37,12 @@ public class EnemyArrayTracker : MonoBehaviour {
 	void Start () {
 
         // find all enemys tagged attacker, will need changing in the future.
-
-
+        for (int i = 0; i < Explosions.Length; i++)
+        {
+            Explosions[i].SetActive(false);
+        }
         
+
         print(EnemyList.Count);
         for (int i = 0; i < EnemyList.Count; i++)
         {
@@ -61,9 +67,15 @@ public class EnemyArrayTracker : MonoBehaviour {
 
                     counter++;
                 }
-            
 
-                 Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
+            if (IsWinner && enemy.tag == "Attacker" && enemy.GetComponent<SimpleAgent>().lives > 0 ||
+            enemy.tag == "Player" && enemy.GetComponent<PinballMovement>().lives > 0)
+            {
+                WinningPlayer = enemy;
+            }
+
+
+                Dis = Vector3.Distance(CurrentEnemy, enemy.transform.position);
 
            
            
@@ -85,17 +97,30 @@ public class EnemyArrayTracker : MonoBehaviour {
             //someone isn't dead. They Win!
             // apply winning state. Do Celebration after.
             IsWinner = true;
-
+            //print("Winner:" + WinningPlayer.name + "EnemyArrayTracker.");
+            //Celebration here
 
         }
 
 
 
-        if (counter == EnemyList.Count)
+        if (IsWinner && WinningPlayer != null)
         {
-            // all are dead. Eh? how did that happen? Throw an error.
-            //Debug.LogError("All players and enemies are dead, that isn't supposed to happen.");
-
+            
+            //Celebrate
+            if (WinningTimer >= 5)
+            {
+                WinningTimer = 5;
+                WinningPlayer.transform.position = CelebratePos.position;
+                for (int i = 0; i < Explosions.Length; i++)
+                {
+                    Explosions[i].SetActive(true);
+                }
+            }
+            else
+            {
+                WinningTimer += 1.0f * Time.deltaTime;
+            }
         }
 
     }

@@ -5,6 +5,7 @@ public class UICountDown : MonoBehaviour {
 
     public TextMesh Text;
     public SimpleAgent Agent;
+    public EnemyArrayTracker tracker;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,13 +15,21 @@ public class UICountDown : MonoBehaviour {
 	void Update () {
        
         int countDown = (int)Agent.waitTimer;
-        Text.text = countDown.ToString();
+        Text.text = "      Starting in " + countDown.ToString();
 
-        if (Agent.waitTimer <= 0)
+        if (Agent.waitTimer <= 0 && !EnemyArrayTracker.IsWinner)
         {
 
-            Destroy(gameObject);
+            Text.text = "";
 
+        }
+        else if(EnemyArrayTracker.IsWinner && tracker.WinningPlayer != null && tracker.WinningPlayer.tag != "Player")
+        {
+            Text.text = tracker.WinningPlayer.name + " is the Winner!";
+        }
+        if (EnemyArrayTracker.IsWinner && tracker.WinningPlayer != null && tracker.WinningPlayer.tag == "Player")
+        {
+            Text.text = "You are the Winner!";
         }
     }
 }

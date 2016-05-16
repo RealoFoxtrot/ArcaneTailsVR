@@ -18,6 +18,7 @@ public class SimpleAgent : MonoBehaviour {
 
     private float boomForce = 1000;
     private float DistanceToEnemy;
+    public bool HittingGround = true;
 
 
     public float boomRadius = 2f;
@@ -29,6 +30,7 @@ public class SimpleAgent : MonoBehaviour {
     public float DisToEn;
     public GameObject enemy;
     public bool BeenHit = false;
+    
     public GameObject[] spawns;
 
     //Respawn System
@@ -81,7 +83,7 @@ public class SimpleAgent : MonoBehaviour {
             
 
         }
-        else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner)
+        else if(transform.position.y > 0 && !BeenHit && !EnemyArrayTracker.IsWinner && HittingGround)
         {
             //creating errors
 
@@ -122,7 +124,7 @@ public class SimpleAgent : MonoBehaviour {
             }
             else
             {
-                print("There is a winner");
+                //print("There is a winner");
                 Target = Camera.main.gameObject.transform.position;
                 enemyAnim.SetBool("Moving", false);
                 agent.updateRotation = false;
@@ -180,7 +182,7 @@ public class SimpleAgent : MonoBehaviour {
             
            
 
-            if (timer > 4 && agent.transform.position.y > 0 && agent.transform.position.y < 0.5f)
+            if (timer > 4 && agent.transform.position.y > 0 && agent.transform.position.y < 0.5f && HittingGround)
             {
                 BeenHit = false;
                 agent.enabled = true;
@@ -222,6 +224,7 @@ public class SimpleAgent : MonoBehaviour {
                     }
                 }
                 transform.position = spawns[Random.Range(0, spawns.Length)].transform.position;
+                HittingGround = true;
                 BeenHit = false;
                 agent.enabled = true;
                 rb.isKinematic = true;
@@ -259,12 +262,7 @@ public class SimpleAgent : MonoBehaviour {
         RespawnTimer += 1.0f * Time.deltaTime;
         respawnParticle.transform.position = transform.position;
         respawnParticle.SetActive(true);
-        /*if (RespawnTimer > 3)
-        {
-            RespawnTimer = 0;
-            respawnParticle.SetActive(false);
-
-        }*/
+        
 
     }
 
@@ -298,6 +296,7 @@ public class SimpleAgent : MonoBehaviour {
         if (agent.enabled == false && col.gameObject.tag == "Floor")
         {
             agent.enabled = true;
+            HittingGround = true;
 
         }
 
@@ -305,7 +304,14 @@ public class SimpleAgent : MonoBehaviour {
 
     }
 
-   
+    void OnCollisionExit(Collision col)
+    {
+        if (agent.enabled == true && col.gameObject.tag == "Floor")
+        {
+            agent.enabled = false;
+            HittingGround = false;
+        }
+    }
 
     void HitPlayer()
     {

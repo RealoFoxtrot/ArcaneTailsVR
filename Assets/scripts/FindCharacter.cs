@@ -10,9 +10,21 @@ public class FindCharacter : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gameObject.SetActive(true);
     }
 
+    void Update()
+    {
 
+        if (player.GetComponent<PinballMovement>().lives <= 0 || EnemyArrayTracker.IsWinner)
+        {
+
+            gameObject.SetActive(false);
+
+        }
+       
+
+    }
 
 	// Update is called once per frame
 	void FixedUpdate () {

@@ -228,14 +228,14 @@ public class PinballMovement : MonoBehaviour
         if (horizontal >= 0 && rb.velocity.x < 4)
         {
 
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * 250 * Time.deltaTime);
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, 0);
         }
 
 
         if (horizontal <= 0 && rb.velocity.x < 4)
         {
             
-            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0, horizontal * speed * rb.mass * -250 * Time.deltaTime);
+            rb.AddRelativeForce(horizontal * speed * rb.mass * 500 * Time.deltaTime, 0,0);
         }
        
         if (vertical != 0 && rb.velocity.z < 4)
@@ -247,10 +247,9 @@ public class PinballMovement : MonoBehaviour
         if (CanJump && Input.GetButton("Jump"))
         {
             rb.AddForce(0, jumpHeight * 5000, 0);
-            if (SceneManager.GetActiveScene().name == "Kitten-Test")
-            {
+            
                 playerAnim.SetTrigger("Jump");
-            }
+            
         }
         
         if (vertical == 0 && horizontal == 0)
